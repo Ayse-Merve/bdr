@@ -49,7 +49,8 @@ PYTHONPATH=src python3 -m bdr plan --category <cat> --email <sender> \
   --lead-status "<Status>" --member-status "<CampaignMember.Status or empty>" \
   --record-type Lead|Contact --reply-lang <lang> \
   --subject "<subject>" --summary "<one line>" --original-text "<their text>" \
-  --company "<Company>" --lead-url "https://govocal.lightning.force.com/<Id>"
+  --company "<Company>" --lead-url "https://govocal.lightning.force.com/<Id>" \
+  [--referral-name "<name (email)>"]   # referral only
 ```
 
 Do exactly what the plan says; nothing more.

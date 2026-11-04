@@ -97,7 +97,7 @@ def render(path, **values):
 def plan(*, category, email, persona_key=None, country=None, first_name=None, last_name=None,
          lead_status=None, member_status=None, record_type="Lead", reply_lang=None,
          subject=None, summary=None, original_text=None, lead_name=None, company=None,
-         lead_url=None):
+         lead_url=None, referral_name=None):
     """Everything to do for one classified reply, as data."""
     campaign = load("campaign.json")
     reps = load("reps.json")
@@ -129,18 +129,23 @@ def plan(*, category, email, persona_key=None, country=None, first_name=None, la
     g["mode"] = campaign["mode"]
     g["labels_add"] = [campaign["gmail"]["auto_reply_label"]] if category == "auto_reply" else (
         [campaign["gmail"]["needs_review_label"]] if category == "unclear" else [campaign["gmail"]["done_label"]])
-    if rule["reply_template"]:
+    template = rule["reply_template"]
+    if template == "referral" and not referral_name:
+        template = None  # no name to thank them for: only forward to the rep
+        out["note"] = "Referral without a named person: no reply, forward only."
+    if template:
         g["reply"] = {"from": campaign["sender"]["email"], "to": email, "cc": rep["email"],
                       "subject": f"Re: {subject}" if subject and not norm(subject).startswith(("re:", "aw:", "sv:")) else subject,
-                      "body": render(f"{rule['reply_template']}/{lang}.md", first_name=first_name,
-                                     last_name=last_name, rep_name=rep["name"], booking_link=link)}
+                      "body": render(f"{template}/{lang}.md", first_name=first_name, last_name=last_name,
+                                     rep_name=rep["name"], booking_link=link,
+                                     referral_name=referral_name)}
     if rule["forward_to_rep"]:
         g["forward"] = {"from": campaign["sender"]["email"], "to": rep["email"], "reply_to": email,
                         "subject": f"[Persona reachout] {category}: {subject or ''}".strip(),
                         "body": render("rep_forward/en.md", rep_name=rep["name"], category=category,
                                        lead_name=lead_name or f"{first_name or ''} {last_name or ''}".strip(),
                                        lead_email=email, company=company, country=ctry,
-                                       persona_key=persona_key, lead_url=lead_url, summary=summary,
+                                       persona_key=persona_key, lead_url=lead_url, summary=(summary or "") + (f" | Referred to: {referral_name}" if referral_name else ""),
                                        booking_link=link, original_text=original_text)}
     if "TODO" in json.dumps(out):
         out["blocked"] = "A rep email is still TODO in config/reps.json. Fill it in before sending or forwarding."

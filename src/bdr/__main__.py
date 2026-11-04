@@ -20,7 +20,7 @@ def main(argv=None):
     for a in ["category", "email"]:
         pl.add_argument(f"--{a}", required=True)
     for a in ["persona-key", "country", "first-name", "last-name", "lead-status", "member-status", "reply-lang",
-              "subject", "summary", "original-text", "lead-name", "company", "lead-url"]:
+              "subject", "summary", "original-text", "lead-name", "company", "lead-url", "referral-name"]:
         pl.add_argument(f"--{a}")
     pl.add_argument("--record-type", default="Lead", choices=["Lead", "Contact"])
     s = sub.add_parser("seen"); s.add_argument("message_id")
@@ -39,7 +39,8 @@ def main(argv=None):
                         lead_status=a.lead_status, member_status=a.member_status,
                         record_type=a.record_type, reply_lang=a.reply_lang, subject=a.subject,
                         summary=a.summary, original_text=a.original_text, lead_name=a.lead_name,
-                        company=a.company, lead_url=a.lead_url)
+                        company=a.company, lead_url=a.lead_url,
+                        referral_name=a.referral_name)
     elif a.cmd == "seen":
         out = {"processed": ledger.is_processed(a.message_id)}
     elif a.cmd == "mark":

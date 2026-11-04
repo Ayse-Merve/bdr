@@ -60,3 +60,22 @@ def test_language_without_persona_key_uses_country():
     assert core.language_for("", "germany") == "de"
     assert core.language_for(None, "chile") == "en-US"
     assert core.language_for(None, "belgium", reply_lang="fr") == "fr"
+
+
+def test_question_gets_ack_and_forward():
+    p = core.plan(category="question", email="j@b.de", persona_key="DACH-GEN", country="Germany",
+                  first_name="Jonas", last_name="Becker", member_status="Sent",
+                  lead_status="Information Qualified (IQL)", subject="AW: Beteiligung zwischen den Ämtern")
+    assert p["gmail"]["reply"]["body"].startswith("Guten Tag Jonas Becker,")
+    assert "eva-mayer-go-vocal/go_demo_vocal" in p["gmail"]["reply"]["body"]
+    assert "forward" in p["gmail"]
+
+
+def test_referral_reply_only_with_a_name():
+    with_name = core.plan(category="referral", email="p@b.be", persona_key="BE-DIR-S", country="Belgium",
+                          first_name="Pieter", member_status="Sent", referral_name="An Peeters")
+    assert "An Peeters" in with_name["gmail"]["reply"]["body"]
+    assert "An Peeters" in with_name["gmail"]["forward"]["body"]
+    without = core.plan(category="referral", email="p@b.be", persona_key="BE-DIR-S", country="Belgium",
+                        first_name="Pieter", member_status="Sent")
+    assert "reply" not in without["gmail"] and "forward" in without["gmail"]

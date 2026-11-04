@@ -31,16 +31,67 @@
       "Sales Accepted (SAL)",
       "Sales Qualified (SQL)"
     ],
-    "never_touch": ["Unqualified", "Closed - Converted"]
+    "never_touch": [
+      "Unqualified",
+      "Closed - Converted"
+    ]
   },
   "categories": {
-    "interested":     {"campaign_status": "Responded", "mql": true,  "reply_template": "interested", "forward_to_rep": false, "opt_out": false},
-    "question":       {"campaign_status": "Responded", "mql": true,  "reply_template": null,         "forward_to_rep": true,  "opt_out": false},
-    "referral":       {"campaign_status": "Responded", "mql": false, "reply_template": null,         "forward_to_rep": true,  "opt_out": false},
-    "not_interested": {"campaign_status": "Responded", "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": false},
-    "unsubscribe":    {"campaign_status": "Responded", "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": true},
-    "left_org":       {"campaign_status": null,        "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": false},
-    "auto_reply":     {"campaign_status": null,        "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": false},
-    "unclear":        {"campaign_status": null,        "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": false}
+    "interested": {
+      "campaign_status": "Responded",
+      "mql": true,
+      "reply_template": "interested",
+      "forward_to_rep": false,
+      "opt_out": false
+    },
+    "question": {
+      "campaign_status": "Responded",
+      "mql": true,
+      "reply_template": "question",
+      "forward_to_rep": true,
+      "opt_out": false
+    },
+    "referral": {
+      "campaign_status": "Responded",
+      "mql": false,
+      "reply_template": "referral",
+      "forward_to_rep": true,
+      "opt_out": false
+    },
+    "not_interested": {
+      "campaign_status": "Responded",
+      "mql": false,
+      "reply_template": null,
+      "forward_to_rep": false,
+      "opt_out": false
+    },
+    "unsubscribe": {
+      "campaign_status": "Responded",
+      "mql": false,
+      "reply_template": null,
+      "forward_to_rep": false,
+      "opt_out": true
+    },
+    "left_org": {
+      "campaign_status": null,
+      "mql": false,
+      "reply_template": null,
+      "forward_to_rep": false,
+      "opt_out": false
+    },
+    "auto_reply": {
+      "campaign_status": null,
+      "mql": false,
+      "reply_template": null,
+      "forward_to_rep": false,
+      "opt_out": false
+    },
+    "unclear": {
+      "campaign_status": null,
+      "mql": false,
+      "reply_template": null,
+      "forward_to_rep": false,
+      "opt_out": false
+    }
   }
 }
