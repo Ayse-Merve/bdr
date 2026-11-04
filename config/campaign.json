@@ -16,8 +16,8 @@
     "done_label": "Nurture replies/Processed",
     "needs_review_label": "Nurture replies/Needs review"
   },
-  "mode": "draft",
-  "_mode_help": "draft = replies and rep forwards are saved as Gmail drafts for Ayse to send. send = they are sent. Salesforce writes happen in both modes.",
+  "mode": "send",
+  "_mode_help": "send = Amy's replies and rep forwards go out automatically (Ayse's decision, 2026-11-04). draft = saved as Gmail drafts instead.",
   "campaign_member_status": {
     "on_send": "Sent",
     "on_human_reply": "Responded",
