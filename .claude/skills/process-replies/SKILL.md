@@ -18,6 +18,7 @@ Scheduled: once every weekday at 09:00 (Europe/Berlin). Monday's run also covers
 - `run_id` = current UTC time as `YYYYMMDD-HHMM`.
 - Read `config/campaign.json` (mode, labels, campaign id) and note the mode in your summary.
 - Work from the repo root; run the CLI as `PYTHONPATH=src python3 -m bdr …`.
+- **Sender check (every run, before anything is sent):** `create_draft` to ayse@govocal.com with subject `bdr sender check <run_id>`, read it with `get_draft` (METADATA_ONLY), then `delete_draft`. The connector sends from Gmail's *default* "Send mail as" address, which must be amy@govocal.com. If the sender is anything else, treat this run as `draft` mode (create drafts, label them `Needs review`) and put "Default sender is not amy@ - change it in Gmail Settings → Accounts → Send mail as" at the top of the summary.
 
 ## 1. Collect new replies
 
