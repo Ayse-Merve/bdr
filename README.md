@@ -5,7 +5,7 @@ Handles replies to Go Vocal's persona reachout emails, sent from **Amy | Go Voca
 **Flow**
 1. Pardot sends the persona-key emails and adds recipients to the Salesforce campaign *LEAD ENGAGEMENT | Global Persona Based Reachout* as **Sent**.
 2. Replies land in ayse@govocal.com under the Gmail label **Nurture replies** (Gmail filter on `to:amy@govocal.com`).
-3. This repo (run by Claude, hourly on weekdays) classifies each reply and:
+3. This repo (run by Claude every weekday at 09:00, using the Gmail and Salesforce Admin connectors) classifies each reply and:
    - **interested** → reply as Amy with the rep's `go_demo_vocal` booking link (`utm_source=persona-reachout`), rep in CC · Lead → **MQL** · member → **Responded**
    - **question** → short reply as Amy ("passed to {rep}", booking link, rep in CC) + forward to the rep · Lead → **MQL** · member → **Responded**
    - **referral** → only forwarded to the rep, nothing else

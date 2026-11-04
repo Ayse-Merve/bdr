@@ -5,12 +5,15 @@ description: Process new replies to Amy's persona reachout emails - classify eac
 
 # Process replies
 
-Read `CLAUDE.md` first; its guardrails apply to every step. Gmail and Salesforce are reached through the **Zapier** tools (Gmail account ayse@govocal.com, Salesforce account connected by Ayse). Load them with ToolSearch if they are deferred, and use `inspect_zapier_actions` to get exact action names and parameters.
+Read `CLAUDE.md` first; its guardrails apply to every step. Tools (load with ToolSearch if deferred):
+- **Gmail connector** (`mcp__Gmail__*`, account ayse@govocal.com): `search_threads`, `get_thread`, `get_message`, `create_draft` (with `replyToMessageId`), `reply`, `forward`, `label_thread` / `label_message`, `list_labels`, `create_label`.
+- **Salesforce Admin connector** (`mcp__Salesforce_Admin__*`): `soqlQuery` to read, `updateSobjectRecord` / `createSobjectRecord` to write. Never use its delete tools.
+
+The Gmail tools have no From field. Replies to mail sent to amy@ must go out **from amy@govocal.com**: before the first live run, check one test draft's From. If it shows ayse@, stop and report it instead of creating replies.
 
 ## 0. Start
 
 Scheduled: once every weekday at 09:00 (Europe/Berlin). Monday's run also covers the weekend; `Processed` labels and `state/processed.jsonl` stop anything being handled twice.
-
 
 - `run_id` = current UTC time as `YYYYMMDD-HHMM`.
 - Read `config/campaign.json` (mode, labels, campaign id) and note the mode in your summary.
@@ -18,7 +21,7 @@ Scheduled: once every weekday at 09:00 (Europe/Berlin). Monday's run also covers
 
 ## 1. Collect new replies
 
-Gmail search (Zapier "Find Email" / search action), newest first, max 50:
+Gmail `search_threads`, newest first, max 50:
 
 ```
 label:nurture-replies -label:nurture-replies-processed -label:nurture-replies-needs-review newer_than:14d
@@ -58,7 +61,7 @@ PYTHONPATH=src python3 -m bdr plan --category <cat> --email <sender> \
 
 Do exactly what the plan says; nothing more.
 
-## 5. Salesforce writes (Zapier Salesforce actions)
+## 5. Salesforce writes (Salesforce Admin connector)
 
 For each item in `plan.salesforce`, log first, then write:
 
@@ -84,4 +87,4 @@ If a write fails, stop processing that message, label it `Needs review`, and rep
 
 ## Dry run (no Gmail, no Salesforce)
 
-To check classification and plans without touching anything: for each item in `fixtures/replies.json`, classify the `body`, compare with `expected`, run `plan` with the fixture's fields, and print a table (id, your category, expected, rep, language, Salesforce changes). Do not call any Zapier tool in a dry run.
+To check classification and plans without touching anything: for each item in `fixtures/replies.json`, classify the `body`, compare with `expected`, run `plan` with the fixture's fields, and print a table (id, your category, expected, rep, language, Salesforce changes). Do not call any Gmail or Salesforce tool in a dry run.
