@@ -9,6 +9,9 @@ Read `CLAUDE.md` first; its guardrails apply to every step. Gmail and Salesforce
 
 ## 0. Start
 
+Scheduled: once every weekday at 09:00 (Europe/Berlin). Monday's run also covers the weekend; `Processed` labels and `state/processed.jsonl` stop anything being handled twice.
+
+
 - `run_id` = current UTC time as `YYYYMMDD-HHMM`.
 - Read `config/campaign.json` (mode, labels, campaign id) and note the mode in your summary.
 - Work from the repo root; run the CLI as `PYTHONPATH=src python3 -m bdr …`.
@@ -23,7 +26,7 @@ label:nurture-replies -label:nurture-replies-processed -label:nurture-replies-ne
 
 Auto-replies already carry the `Nurture replies/Auto-replies` label from Gmail's filter. Include them only to label them `Processed`; they need nothing else.
 
-**Safety net (direct emails to Ayse):** also search `in:inbox newer_than:2d -from:govocal.com`. For each sender, check in Salesforce whether they are a member of the campaign (`CampaignMember` with that email in campaign id from config). Only those count as campaign replies: add the `Nurture replies` label and process them like the rest. Don't open or act on any other inbox email.
+**Safety net (direct emails to Ayse):** also search `in:inbox newer_than:4d -from:govocal.com`. For each sender, check in Salesforce whether they are a member of the campaign (`CampaignMember` with that email in campaign id from config). Only those count as campaign replies: add the `Nurture replies` label and process them like the rest. Don't open or act on any other inbox email.
 
 For each message, skip it if `python -m bdr seen <message_id>` says processed, or if its thread already has a message from amy@govocal.com sent after it.
 
