@@ -25,5 +25,5 @@ Pass `--reply-lang` with the language the person wrote in, using one of: `en-US`
 
 - `interested`: Amy's reply with the rep's booking link, rep in CC.
 - `question`: Amy's short "I've passed your question to {rep}" reply with the booking link, rep in CC, plus the forward to the rep, who answers the question.
-- `referral`: Amy's "we'll get in touch with {name}" reply, rep in CC, plus the forward to the rep. No name given → forward only, no reply.
+- `referral`: no reply and no Salesforce change; the email is only forwarded to the rep (with the referred person's name if given).
 - everything else: no reply.

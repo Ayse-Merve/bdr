@@ -52,11 +52,12 @@
       "opt_out": false
     },
     "referral": {
-      "campaign_status": "Responded",
+      "campaign_status": null,
       "mql": false,
-      "reply_template": "referral",
+      "reply_template": null,
       "forward_to_rep": true,
-      "opt_out": false
+      "opt_out": false,
+      "log_task": false
     },
     "not_interested": {
       "campaign_status": "Responded",

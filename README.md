@@ -8,7 +8,7 @@ Handles replies to Go Vocal's persona reachout emails, sent from **Amy | Go Voca
 3. This repo (run by Claude, hourly on weekdays) classifies each reply and:
    - **interested** → reply as Amy with the rep's `go_demo_vocal` booking link (`utm_source=persona-reachout`), rep in CC · Lead → **MQL** · member → **Responded**
    - **question** → short reply as Amy ("passed to {rep}", booking link, rep in CC) + forward to the rep · Lead → **MQL** · member → **Responded**
-   - **referral** → short reply as Amy ("we'll contact {name}", rep in CC) + forward to the rep · member → **Responded**
+   - **referral** → only forwarded to the rep, nothing else
    - **not interested** → member → **Responded**, no reply
    - **unsubscribe** → member → **Responded** · email opt-out
    - **left organisation / auto-reply / unclear** → no status change (unclear goes to *Needs review*)
@@ -20,7 +20,7 @@ Handles replies to Go Vocal's persona reachout emails, sent from **Amy | Go Voca
 - `.claude/skills/process-replies/SKILL.md`: the run, step by step (+ dry run)
 - `config/campaign.json`: campaign, sender, labels, mode (`draft` / `send`), status rules
 - `config/reps.json`: country → rep → Calendly (Spain → Roger). **Fill in rep emails.**
-- `templates/`: Amy's replies (interested, question, referral) in 7 languages, and the forward to reps
+- `templates/`: Amy's replies (interested, question) in 7 languages, and the forward to reps
 - `docs/categories.md`: how replies are classified
 - `src/bdr/`: deterministic rules (routing, language, status changes, logging) · `tests/` · `fixtures/`
 - `state/`: processed messages and every Salesforce write with its old value (undo with `python -m bdr undo <run_id>`)

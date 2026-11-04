@@ -121,7 +121,7 @@ def plan(*, category, email, persona_key=None, country=None, first_name=None, la
                                         "create_if_missing": member_status is None}
     if rule["opt_out"]:
         sf["email_opt_out"] = True
-    if category not in ("auto_reply", "unclear"):
+    if rule.get("log_task", True) and category not in ("auto_reply", "unclear"):
         sf["task"] = {"subject": f"Email reply ({category}): {subject or ''}".strip(),
                       "description": original_text or ""}
 
@@ -130,15 +130,11 @@ def plan(*, category, email, persona_key=None, country=None, first_name=None, la
     g["labels_add"] = [campaign["gmail"]["auto_reply_label"]] if category == "auto_reply" else (
         [campaign["gmail"]["needs_review_label"]] if category == "unclear" else [campaign["gmail"]["done_label"]])
     template = rule["reply_template"]
-    if template == "referral" and not referral_name:
-        template = None  # no name to thank them for: only forward to the rep
-        out["note"] = "Referral without a named person: no reply, forward only."
     if template:
         g["reply"] = {"from": campaign["sender"]["email"], "to": email, "cc": rep["email"],
                       "subject": f"Re: {subject}" if subject and not norm(subject).startswith(("re:", "aw:", "sv:")) else subject,
                       "body": render(f"{template}/{lang}.md", first_name=first_name, last_name=last_name,
-                                     rep_name=rep["name"], booking_link=link,
-                                     referral_name=referral_name)}
+                                     rep_name=rep["name"], booking_link=link)}
     if rule["forward_to_rep"]:
         g["forward"] = {"from": campaign["sender"]["email"], "to": rep["email"], "reply_to": email,
                         "subject": f"[Persona reachout] {category}: {subject or ''}".strip(),

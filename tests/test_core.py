@@ -71,11 +71,10 @@ def test_question_gets_ack_and_forward():
     assert "forward" in p["gmail"]
 
 
-def test_referral_reply_only_with_a_name():
-    with_name = core.plan(category="referral", email="p@b.be", persona_key="BE-DIR-S", country="Belgium",
-                          first_name="Pieter", member_status="Sent", referral_name="An Peeters")
-    assert "An Peeters" in with_name["gmail"]["reply"]["body"]
-    assert "An Peeters" in with_name["gmail"]["forward"]["body"]
-    without = core.plan(category="referral", email="p@b.be", persona_key="BE-DIR-S", country="Belgium",
-                        first_name="Pieter", member_status="Sent")
-    assert "reply" not in without["gmail"] and "forward" in without["gmail"]
+def test_referral_is_forward_only():
+    p = core.plan(category="referral", email="p@b.be", persona_key="BE-DIR-S", country="Belgium",
+                  first_name="Pieter", lead_status="Information Qualified (IQL)", member_status="Sent",
+                  referral_name="An Peeters (an.peeters@example.be)")
+    assert p["salesforce"] == {}
+    assert "reply" not in p["gmail"]
+    assert "An Peeters" in p["gmail"]["forward"]["body"]
