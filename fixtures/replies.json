@@ -1,0 +1,22 @@
+[
+  {"id": "fx-01", "from": "test.nl@example.nl", "persona_key": "NL-DIR-O", "country": "Netherlands", "first_name": "Sanne", "last_name": "de Vries",
+   "subject": "Re: Eén standaard voor alle afdelingen", "body": "Hoi Amy, klinkt interessant. Volgende week heb ik wel tijd voor een gesprek.", "expected": "interested", "expected_lang": "nl", "expected_rep": "yuri"},
+  {"id": "fx-02", "from": "test.de@example.de", "persona_key": "DACH-GEN", "country": "Germany", "first_name": "Jonas", "last_name": "Becker",
+   "subject": "AW: Beteiligung zwischen den Ämtern", "body": "Was kostet die Plattform ungefähr für eine Stadt mit 60.000 Einwohnern?", "expected": "question", "expected_lang": "de", "expected_rep": "eva"},
+  {"id": "fx-03", "from": "test.fr@example.fr", "persona_key": "FR-GEN", "country": "France", "first_name": "Claire", "last_name": "Martin",
+   "subject": "Réponse automatique : Une vue d'ensemble des contributions", "body": "Je suis absente jusqu'au 15 novembre.", "expected": "auto_reply", "expected_lang": "fr", "expected_rep": "zelda"},
+  {"id": "fx-04", "from": "test.dk@example.dk", "persona_key": "NORDICS-DIR-O", "country": null, "first_name": "Mette", "last_name": "Hansen",
+   "subject": "SV: Én standard på tværs af forvaltninger", "body": "Hej Amy, ja tak, lad os tage en snak.", "expected": "interested", "expected_lang": "da", "expected_rep": "soren"},
+  {"id": "fx-05", "from": "test.us@example.gov", "persona_key": "NAM-POL-W", "country": "United States", "first_name": "Mike", "last_name": "Brown",
+   "subject": "Re: Who was heard, and what it changed", "body": "Please remove me from your list.", "expected": "unsubscribe", "expected_lang": "en-US", "expected_rep": "sarah"},
+  {"id": "fx-06", "from": "test.be@example.be", "persona_key": "BE-DIR-S", "country": "Belgium", "first_name": "Pieter", "last_name": "Claes",
+   "subject": "RE: Participatie zonder extra systeem", "body": "Pieter werkt niet meer bij onze gemeente. Neem contact op met An Peeters, an.peeters@example.be.", "expected": "referral", "expected_lang": "nl-BE", "expected_rep": "joris"},
+  {"id": "fx-07", "from": "test.uk@example.gov.uk", "persona_key": "UKI-ENG-O", "country": "United Kingdom", "first_name": "Laura", "last_name": "Smith",
+   "subject": "Re: Explaining what residents said", "body": "Thanks, but we've just signed with another provider.", "expected": "not_interested", "expected_lang": "en-GB", "expected_rep": "amanda"},
+  {"id": "fx-08", "from": "test.es@example.es", "persona_key": "NAM-GEN", "country": "Spain", "first_name": "Lucía", "last_name": "García",
+   "subject": "Una pregunta", "body": "Hola, ¿tienen la plataforma en español?", "expected": "question", "expected_lang": "en-US", "expected_rep": "roger"},
+  {"id": "fx-09", "from": "test.se@example.se", "persona_key": "NORDICS-GEN", "country": "Sweden", "first_name": "Erik", "last_name": "Lund",
+   "subject": "Re: Hybrid participation with a small team", "body": "Sure, happy to have a call.", "expected": "interested", "expected_lang": "en-GB", "expected_rep": "emile"},
+  {"id": "fx-10", "from": "test.nl2@example.nl", "persona_key": "NL-GEN", "country": "Netherlands", "first_name": "Bram", "last_name": "Jansen",
+   "subject": "Re: Dezelfde vraag, twee keer gesteld", "body": "Ik werk hier niet meer.", "expected": "left_org", "expected_lang": "nl", "expected_rep": "yuri"}
+]

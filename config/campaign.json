@@ -1,0 +1,46 @@
+{
+  "campaign_name": "LEAD ENGAGEMENT | Global Persona Based Reachout",
+  "campaign_id": "701Qs00000xt4XFIAY",
+  "utm_source": "persona-reachout",
+  "calendly_slug": "go_demo_vocal",
+  "sender": {
+    "name": "Amy | Go Vocal",
+    "email": "amy@govocal.com",
+    "signature_name": "Amy Arcalode",
+    "signature_title": "Growth Partner | Go Vocal"
+  },
+  "gmail": {
+    "inbox_account": "ayse@govocal.com",
+    "reply_label": "Nurture replies",
+    "auto_reply_label": "Nurture replies/Auto-replies",
+    "done_label": "Nurture replies/Processed",
+    "needs_review_label": "Nurture replies/Needs review"
+  },
+  "mode": "draft",
+  "_mode_help": "draft = replies and rep forwards are saved as Gmail drafts for Ayse to send. send = they are sent. Salesforce writes happen in both modes.",
+  "campaign_member_status": {
+    "on_send": "Sent",
+    "on_human_reply": "Responded",
+    "on_booking": "Meeting Booked"
+  },
+  "lead_status": {
+    "mql": "Marketing Qualified (MQL)",
+    "order": [
+      "Information Qualified (IQL)",
+      "Marketing Qualified (MQL)",
+      "Sales Accepted (SAL)",
+      "Sales Qualified (SQL)"
+    ],
+    "never_touch": ["Unqualified", "Closed - Converted"]
+  },
+  "categories": {
+    "interested":     {"campaign_status": "Responded", "mql": true,  "reply_template": "interested", "forward_to_rep": false, "opt_out": false},
+    "question":       {"campaign_status": "Responded", "mql": true,  "reply_template": null,         "forward_to_rep": true,  "opt_out": false},
+    "referral":       {"campaign_status": "Responded", "mql": false, "reply_template": null,         "forward_to_rep": true,  "opt_out": false},
+    "not_interested": {"campaign_status": "Responded", "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": false},
+    "unsubscribe":    {"campaign_status": "Responded", "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": true},
+    "left_org":       {"campaign_status": null,        "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": false},
+    "auto_reply":     {"campaign_status": null,        "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": false},
+    "unclear":        {"campaign_status": null,        "mql": false, "reply_template": null,         "forward_to_rep": false, "opt_out": false}
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "_help": "Country -> rep. Matches the website demo form, except Spain goes to Roger. Fill in each rep's email before go-live (needed for CC and forwards).",
+  "reps": {
+    "eva":    {"name": "Eva",    "calendly_user": "eva-mayer-go-vocal",     "email": "TODO"},
+    "sarah":  {"name": "Sarah",  "calendly_user": "sarah_horton",           "email": "TODO"},
+    "lora":   {"name": "Lora",   "calendly_user": "lora-botev",             "email": "TODO"},
+    "yuri":   {"name": "Yuri",   "calendly_user": "yuri-govocal",           "email": "TODO"},
+    "joris":  {"name": "Joris",  "calendly_user": "joris-govocal",          "email": "TODO"},
+    "zelda":  {"name": "Zelda",  "calendly_user": "zelda-govocal",          "email": "TODO"},
+    "amanda": {"name": "Amanda", "calendly_user": "amanda-dezilva-govocal", "email": "TODO"},
+    "roger":  {"name": "Roger",  "calendly_user": "roger-govocal",          "email": "TODO"},
+    "soren":  {"name": "Søren",  "calendly_user": "kielgast",               "email": "TODO"},
+    "emile":  {"name": "Emile",  "calendly_user": "emile-govocal",          "email": "TODO"}
+  },
+  "country_to_rep": {
+    "germany": "eva", "austria": "eva", "switzerland": "eva", "liechtenstein": "eva",
+    "united states": "sarah", "usa": "sarah",
+    "australia": "lora", "new zealand": "lora",
+    "netherlands": "yuri", "the netherlands": "yuri",
+    "belgium": "joris",
+    "france": "zelda",
+    "united kingdom": "amanda", "uk": "amanda",
+    "italy": "roger", "spain": "roger",
+    "denmark": "soren", "greenland": "soren"
+  },
+  "default_rep": "emile",
+  "email_tld_to_country": {
+    "de": "germany", "at": "austria", "ch": "switzerland", "li": "liechtenstein",
+    "nl": "netherlands", "be": "belgium", "fr": "france",
+    "uk": "united kingdom", "it": "italy", "es": "spain",
+    "dk": "denmark", "gl": "greenland", "au": "australia", "nz": "new zealand",
+    "gov": "united states", "us": "united states"
+  }
+}
