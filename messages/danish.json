@@ -1,0 +1,45 @@
+{
+  "_about": "Danish versions of the NORDICS-* emails, sent to NORDICS leads whose organisation is in Denmark or Greenland. Facts unchanged from the English source. DRAFT: have a Danish speaker review.",
+  "variants": {
+    "NORDICS-ENG-S": {
+      "subject": "Borgerinddragelse med et lille team",
+      "body": "Hej {{Recipient.FirstName}},\n\nI mange mindre kommuner afhænger borgerinddragelsen af én persons energi. Når den person er optaget af andre opgaver, går det i stå.\n\nHvis du stort set står med det alene, skal værktøjerne spare dig tid.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-ENG-O": {
+      "subject": "At forklare, hvad borgerne sagde",
+      "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nDet er dig, der skal få processen til at fungere og bagefter forklare resultaterne – ofte til folk, der ikke selv var med.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-ENG-W": {
+      "subject": "Repræsentativt nok til at handle på",
+      "body": "Hej {{Recipient.FirstName}},\n\nI jeres størrelse er det svære at komme fra tusindvis af forslag til en kortliste, I kan stå inde for – og at gøre det hurtigt.\n\nDu bliver målt på, om inputtet var repræsentativt.\n\nKøbenhavn (647.509 indbyggere) fik 12.000 borgere til at deltage i et stort forslagsprojekt på bare fire måneder.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-DIR-S": {
+      "subject": "Borgerinddragelse uden endnu et system at drive",
+      "body": "Hej {{Recipient.FirstName}},\n\nI mange mindre kommuner afhænger borgerinddragelsen af én persons energi. Når den person er optaget af andre opgaver, går det i stå.\n\nMed et team af denne størrelse overlever noget, der kræver en dedikeret administrator, ikke det første travle kvartal.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-DIR-O": {
+      "subject": "Én standard på tværs af forvaltninger",
+      "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nÉt system på tværs af forvaltninger betyder mindre dobbeltarbejde og ét sted at kigge, når nogen spørger, hvad borgerne faktisk sagde.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-DIR-W": {
+      "subject": "Samme standard, uanset hvem der står for det",
+      "body": "Hej {{Recipient.FirstName}},\n\nI jeres størrelse er det svære at komme fra tusindvis af forslag til en kortliste, I kan stå inde for – og at gøre det hurtigt.\n\nVærdien i jeres størrelse er ensartethed: samme standard og samme rapportering, uanset hvilken forvaltning der står for projektet.\n\nKøbenhavn (647.509 indbyggere) fik 12.000 borgere til at deltage i et stort forslagsprojekt på bare fire måneder.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-POL-S": {
+      "subject": "Vis borgerne, at deres input talte",
+      "body": "Hej {{Recipient.FirstName}},\n\nI mange mindre kommuner afhænger borgerinddragelsen af én persons energi. Når den person er optaget af andre opgaver, går det i stå.\n\nI en kommune af denne størrelse lægger borgerne hurtigt mærke til, om deres input førte nogen vegne – og det gør du også.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-POL-O": {
+      "subject": "Vis borgerne, hvad der ændrede sig",
+      "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nBorgerne forbliver engagerede, når de kan se, hvad der ændrede sig på grund af det, de sagde – og det er noget, du kan pege på.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-POL-W": {
+      "subject": "Hvem blev hørt, og hvad ændrede det",
+      "body": "Hej {{Recipient.FirstName}},\n\nI jeres størrelse er det svære at komme fra tusindvis af forslag til en kortliste, I kan stå inde for – og at gøre det hurtigt.\n\nLegitimitet er det afgørende i denne størrelse: beslutninger bliver bedre modtaget, når du kan vise, hvem der blev hørt, og hvad det ændrede.\n\nKøbenhavn (647.509 indbyggere) fik 12.000 borgere til at deltage i et stort forslagsprojekt på bare fire måneder.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    },
+    "NORDICS-GEN": {
+      "subject": "Hybrid borgerinddragelse med et lille team",
+      "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+  }
+}

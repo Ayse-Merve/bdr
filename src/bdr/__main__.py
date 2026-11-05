@@ -5,6 +5,7 @@
   python -m bdr mark <message_id> <email> <category> <run_id>
   python -m bdr log-write <run_id> <object> <record_id> <field> <old> <new>
   python -m bdr undo <run_id>
+  python -m bdr batch --plan plan.json --leads leads.json --out out/<batch>
 """
 import argparse
 import json
@@ -31,6 +32,10 @@ def main(argv=None):
     for a in ["run_id", "object", "record_id", "field", "old", "new"]:
         w.add_argument(a)
     u = sub.add_parser("undo"); u.add_argument("run_id")
+    b = sub.add_parser("batch", help="plan + lead JSON -> Pardot import CSV with persona key and message")
+    b.add_argument("--plan", required=True)
+    b.add_argument("--leads", nargs="+", required=True)
+    b.add_argument("--out", required=True)
     a = p.parse_args(argv)
 
     if a.cmd == "plan":
@@ -47,6 +52,9 @@ def main(argv=None):
         ledger.mark_processed(a.message_id, a.email, a.category, a.run_id); out = {"ok": True}
     elif a.cmd == "log-write":
         ledger.log_write(a.run_id, a.object, a.record_id, a.field, a.old, a.new); out = {"ok": True}
+    elif a.cmd == "batch":
+        from . import batch
+        out = batch.build(a.plan, a.leads, a.out)
     else:
         out = ledger.undo_list(a.run_id)
     json.dump(out, sys.stdout, ensure_ascii=False, indent=2)

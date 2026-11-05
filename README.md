@@ -1,6 +1,11 @@
 # bdr
 
-Handles replies to Go Vocal's persona reachout emails, sent from **Amy | Go Vocal (amy@govocal.com)**.
+Go Vocal's persona reachout, sent from **Amy | Go Vocal (amy@govocal.com)**. Two parts:
+
+1. **New batch** (`.claude/skills/new-batch/SKILL.md`): Ayse shares a leads file → persona key per lead (`persona/`, Borna's rules) → `out/<batch>/pardot-import.csv` with the ready subject and message per lead. Ayse imports it into Pardot and sends one email that uses the merge fields `Nurture track subject` / `Nurture track message`.
+2. **Replies** (`.claude/skills/process-replies/SKILL.md`): every weekday at 09:00, answer and route the replies and update Salesforce.
+
+## Replies
 
 **Flow**
 1. Pardot sends the persona-key emails and adds recipients to the Salesforce campaign *LEAD ENGAGEMENT | Global Persona Based Reachout* as **Sent**.
@@ -16,6 +21,7 @@ Handles replies to Go Vocal's persona reachout emails, sent from **Amy | Go Voca
 4. A booking through the link fires the Salesforce flow (Meeting Source = `persona-reachout`, SQL). Meeting Booked in this campaign is set in Pardot.
 
 **Files**
+- `persona/`: persona-key rules (from govocal-pardot-nurture) · `messages/`: the 70 emails + Danish, built from the messaging sheet · `tools/import_messages.py`
 - `CLAUDE.md`: guardrails
 - `.claude/skills/process-replies/SKILL.md`: the run, step by step (+ dry run)
 - `config/campaign.json`: campaign, sender, labels, mode (`draft` / `send`), status rules

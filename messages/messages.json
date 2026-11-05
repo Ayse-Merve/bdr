@@ -1,0 +1,495 @@
+{
+ "_source": "persona-key-messages.xlsx",
+ "messages": {
+  "NAM-ENG-S": {
+   "language": "English (US)",
+   "subject": "Running engagement with a small team",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of smaller cities and towns, a small team gets asked to run a comprehensive plan or a public safety conversation with the same three staff and a public hearing that twelve people attend.\n\nIf you are running this largely on your own, the tooling has to save you time.\n\nStruthers, OH (10,000 residents) built its first comprehensive plan by going directly to residents, and made a point of reaching both younger and older people.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-ENG-O": {
+   "language": "English (US)",
+   "subject": "Explaining what residents said",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of cities your size, each department picks its own engagement tool. Residents get surveyed over and over, and every project runs to a different standard. Nobody planned it, it just built up.\n\nYou are the one who has to make the process work and then explain the results, usually to people who were not in the room.\n\nLancaster, PA (57,000 residents) blended online and offline engagement so its diverse population was properly represented, across everything from policing to mobility planning.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-ENG-W": {
+   "language": "English (US)",
+   "subject": "Representative enough to act on",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn larger cities and counties, the same few voices tend to dominate the record. It gets hard for leadership to know whether what they heard is representative enough to act on.\n\nThat is what you get judged on, more than on how many responses came in.\n\nSt. Louis, MO (318,172 residents) involved more than 16,000 residents in deciding how to allocate a $250 million settlement fund, with residents in the process from the start.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-DIR-S": {
+   "language": "English (US)",
+   "subject": "Engagement without another system to run",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of smaller cities and towns, a small team gets asked to run a comprehensive plan or a public safety conversation with the same three staff and a public hearing that twelve people attend.\n\nWith a team this size, anything that needs a dedicated administrator will not survive its first busy quarter.\n\nStruthers, OH (10,000 residents) built its first comprehensive plan by going directly to residents, and made a point of reaching both younger and older people.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-DIR-O": {
+   "language": "English (US)",
+   "subject": "One standard across departments",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of cities your size, each department picks its own engagement tool. Residents get surveyed over and over, and every project runs to a different standard. Nobody planned it, it just built up.\n\nOne system across departments means less duplicated staff time and one place to look when someone asks what residents actually said.\n\nLancaster, PA (57,000 residents) blended online and offline engagement so its diverse population was properly represented, across everything from policing to mobility planning.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-DIR-W": {
+   "language": "English (US)",
+   "subject": "Same standard, whichever team runs it",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn larger cities and counties, the same few voices tend to dominate the record. It gets hard for leadership to know whether what they heard is representative enough to act on.\n\nThe value at your scale is consistency: same standard, same reporting, whichever department runs the project.\n\nSt. Louis, MO (318,172 residents) involved more than 16,000 residents in deciding how to allocate a $250 million settlement fund, with residents in the process from the start.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-POL-S": {
+   "language": "English (US)",
+   "subject": "Showing residents their input counted",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of smaller cities and towns, a small team gets asked to run a comprehensive plan or a public safety conversation with the same three staff and a public hearing that twelve people attend.\n\nIn a place this size residents notice quickly whether their input went anywhere, and so do you.\n\nStruthers, OH (10,000 residents) built its first comprehensive plan by going directly to residents, and made a point of reaching both younger and older people.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-POL-O": {
+   "language": "English (US)",
+   "subject": "Showing residents what changed",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of cities your size, each department picks its own engagement tool. Residents get surveyed over and over, and every project runs to a different standard. Nobody planned it, it just built up.\n\nResidents stay engaged when they can see what changed because of what they said, and that is something you can point to.\n\nLancaster, PA (57,000 residents) blended online and offline engagement so its diverse population was properly represented, across everything from policing to mobility planning.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-POL-W": {
+   "language": "English (US)",
+   "subject": "Who was heard, and what it changed",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn larger cities and counties, the same few voices tend to dominate the record. It gets hard for leadership to know whether what they heard is representative enough to act on.\n\nLegitimacy is the point at this scale: decisions land better when you can show who was heard and what it changed.\n\nSt. Louis, MO (318,172 residents) involved more than 16,000 residents in deciding how to allocate a $250 million settlement fund, with residents in the process from the start.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NAM-GEN": {
+   "language": "English (US)",
+   "subject": "Engagement across departments",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of cities your size, each department picks its own engagement tool. Residents get surveyed over and over, and every project runs to a different standard. Nobody planned it, it just built up.\n\nLancaster, PA (57,000 residents) blended online and offline engagement so its diverse population was properly represented, across everything from policing to mobility planning.\n\nWould a 20-minute call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-ENG-S": {
+   "language": "English (UK)",
+   "subject": "Running engagement with a small team",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of district councils, a small engagement team can run statutory consultation or meaningful engagement, rarely both. The statutory work always wins.\n\nIf you are running this largely on your own, the tooling has to save you time.\n\nCambridge City Council (145,700 residents) analysed consultation input 50% faster using AI analysis, saving 10 hours on a single Design Code consultation and freeing the team to ask more open questions.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-ENG-O": {
+   "language": "English (UK)",
+   "subject": "Explaining what residents said",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of councils your size, Planning uses one platform, Communications another and Youth Services something else. Staff duplicate work, and the insight sits in three places nobody joins up.\n\nYou are the one who has to make the process work and then explain the results, usually to people who were not in the room.\n\nCambridge City Council (145,700 residents) analysed consultation input 50% faster using AI analysis, saving 10 hours on a single Design Code consultation and freeing the team to ask more open questions.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-ENG-W": {
+   "language": "English (UK)",
+   "subject": "Representative enough to act on",
+   "body": "Hi {{Recipient.FirstName}},\n\nAt your scale, thousands of consultation responses arrive and the team spends days in spreadsheets summarising them. It is the slowest part of the whole process.\n\nYou are judged on whether the input was representative.\n\nAfter seven years on the same systems, LB Southwark (around 300,000 residents) ran a technical audit and a full procurement, chose Go Vocal, and has roughly doubled the efficiency of its engagement work.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-DIR-S": {
+   "language": "English (UK)",
+   "subject": "Engagement without another system to run",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of district councils, a small engagement team can run statutory consultation or meaningful engagement, rarely both. The statutory work always wins.\n\nWith a team this size, anything that needs a dedicated administrator will not survive its first busy quarter.\n\nCambridge City Council (145,700 residents) analysed consultation input 50% faster using AI analysis, saving 10 hours on a single Design Code consultation and freeing the team to ask more open questions.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-DIR-O": {
+   "language": "English (UK)",
+   "subject": "One standard across departments",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of councils your size, Planning uses one platform, Communications another and Youth Services something else. Staff duplicate work, and the insight sits in three places nobody joins up.\n\nOne system across departments means less duplicated staff time and one place to look when someone asks what residents actually said.\n\nCambridge City Council (145,700 residents) analysed consultation input 50% faster using AI analysis, saving 10 hours on a single Design Code consultation and freeing the team to ask more open questions.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-DIR-W": {
+   "language": "English (UK)",
+   "subject": "Same standard, whichever team runs it",
+   "body": "Hi {{Recipient.FirstName}},\n\nAt your scale, thousands of consultation responses arrive and the team spends days in spreadsheets summarising them. It is the slowest part of the whole process.\n\nThe value at your scale is consistency: same standard, same reporting, whichever department runs the project.\n\nAfter seven years on the same systems, LB Southwark (around 300,000 residents) ran a technical audit and a full procurement, chose Go Vocal, and has roughly doubled the efficiency of its engagement work.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-POL-S": {
+   "language": "English (UK)",
+   "subject": "Showing residents their input counted",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of district councils, a small engagement team can run statutory consultation or meaningful engagement, rarely both. The statutory work always wins.\n\nIn a place this size residents notice quickly whether their input went anywhere, and so do you.\n\nCambridge City Council (145,700 residents) analysed consultation input 50% faster using AI analysis, saving 10 hours on a single Design Code consultation and freeing the team to ask more open questions.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-POL-O": {
+   "language": "English (UK)",
+   "subject": "Showing residents what changed",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of councils your size, Planning uses one platform, Communications another and Youth Services something else. Staff duplicate work, and the insight sits in three places nobody joins up.\n\nResidents stay engaged when they can see what changed because of what they said, and that is something you can point to.\n\nCambridge City Council (145,700 residents) analysed consultation input 50% faster using AI analysis, saving 10 hours on a single Design Code consultation and freeing the team to ask more open questions.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-POL-W": {
+   "language": "English (UK)",
+   "subject": "Who was heard, and what it changed",
+   "body": "Hi {{Recipient.FirstName}},\n\nAt your scale, thousands of consultation responses arrive and the team spends days in spreadsheets summarising them. It is the slowest part of the whole process.\n\nLegitimacy is the point at this scale: decisions land better when you can show who was heard and what it changed.\n\nAfter seven years on the same systems, LB Southwark (around 300,000 residents) ran a technical audit and a full procurement, chose Go Vocal, and has roughly doubled the efficiency of its engagement work.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "UKI-GEN": {
+   "language": "English (UK)",
+   "subject": "Joining up engagement across teams",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of councils your size, Planning uses one platform, Communications another and Youth Services something else. Staff duplicate work, and the insight sits in three places nobody joins up.\n\nCambridge City Council (145,700 residents) analysed consultation input 50% faster using AI analysis, saving 10 hours on a single Design Code consultation and freeing the team to ask more open questions.\n\nWould a quick catch-up this week or next be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT"
+  },
+  "NL-ENG-S": {
+   "language": "Dutch",
+   "subject": "Participatie met een klein team",
+   "body": "Dag {{Recipient.FirstName}},\n\nIn een kleinere gemeente ligt participatie meestal bij één persoon, naast drie andere taken. Het gebeurt dus als er tijd voor is.\n\nAls je dit grotendeels alleen doet, moet de tooling je tijd besparen.\n\nWaddinxveen (35.000 inwoners), de snelst groeiende stad van Nederland, wilde haar jongste inwoners laten meebeslissen over de toekomst van de gemeente. Daar is 30% van de bevolking jonger dan 25.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-ENG-O": {
+   "language": "Dutch",
+   "subject": "Participatie op één plek",
+   "body": "Dag {{Recipient.FirstName}},\n\nBij veel gemeenten van jullie omvang zie ik hetzelfde: elk team draait zijn eigen participatie, inwoners krijgen dezelfde vraag twee keer en niemand heeft het totaalbeeld. Met de Omgevingswet wordt dat snel duur.\n\nJij bent degene die het proces moet laten werken en daarna de uitkomsten moet uitleggen, meestal aan mensen die er niet bij waren.\n\nGoeree-Overflakkee (52.000 inwoners) bereikt inmiddels één op de vijf huishoudens via één participatieplatform, bij groot beleid en bij kleine lokale projecten.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-ENG-W": {
+   "language": "Dutch",
+   "subject": "Is de input representatief?",
+   "body": "Dag {{Recipient.FirstName}},\n\nOp jullie schaal zit de echte uitdaging in twee dingen: aantonen dat de input representatief is, en duizenden reacties omzetten in iets waar het college mee verder kan.\n\nDaar word jij op afgerekend, meer dan op het aantal reacties.\n\nAmstelveen en Aalsmeer (samen 90.750 inwoners) stapten over van losse tools en inspraakavonden naar één platform, en draaiden sindsdien meer dan 100 projecten met meer dan 11.500 deelnemers.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-DIR-S": {
+   "language": "Dutch",
+   "subject": "Participatie zonder extra systeem",
+   "body": "Dag {{Recipient.FirstName}},\n\nIn een kleinere gemeente ligt participatie meestal bij één persoon, naast drie andere taken. Het gebeurt dus als er tijd voor is.\n\nMet een team van deze omvang overleeft niets dat een eigen beheerder nodig heeft het eerste drukke kwartaal.\n\nWaddinxveen (35.000 inwoners), de snelst groeiende stad van Nederland, wilde haar jongste inwoners laten meebeslissen over de toekomst van de gemeente. Daar is 30% van de bevolking jonger dan 25.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-DIR-O": {
+   "language": "Dutch",
+   "subject": "Eén standaard voor alle afdelingen",
+   "body": "Dag {{Recipient.FirstName}},\n\nBij veel gemeenten van jullie omvang zie ik hetzelfde: elk team draait zijn eigen participatie, inwoners krijgen dezelfde vraag twee keer en niemand heeft het totaalbeeld. Met de Omgevingswet wordt dat snel duur.\n\nEén systeem voor alle afdelingen betekent minder dubbel werk en één plek om te kijken als iemand vraagt wat inwoners nu echt zeiden.\n\nGoeree-Overflakkee (52.000 inwoners) bereikt inmiddels één op de vijf huishoudens via één participatieplatform, bij groot beleid en bij kleine lokale projecten.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-DIR-W": {
+   "language": "Dutch",
+   "subject": "Dezelfde aanpak in elke afdeling",
+   "body": "Dag {{Recipient.FirstName}},\n\nOp jullie schaal zit de echte uitdaging in twee dingen: aantonen dat de input representatief is, en duizenden reacties omzetten in iets waar het college mee verder kan.\n\nOp jullie schaal zit de winst in consistentie: dezelfde standaard en dezelfde rapportage, welke afdeling het project ook draait.\n\nAmstelveen en Aalsmeer (samen 90.750 inwoners) stapten over van losse tools en inspraakavonden naar één platform, en draaiden sindsdien meer dan 100 projecten met meer dan 11.500 deelnemers.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-POL-S": {
+   "language": "Dutch",
+   "subject": "Laten zien wat inbreng oplevert",
+   "body": "Dag {{Recipient.FirstName}},\n\nIn een kleinere gemeente ligt participatie meestal bij één persoon, naast drie andere taken. Het gebeurt dus als er tijd voor is.\n\nIn een kleine gemeenschap merken inwoners snel of hun inbreng ergens toe leidde. Jij merkt dat ook.\n\nWaddinxveen (35.000 inwoners), de snelst groeiende stad van Nederland, wilde haar jongste inwoners laten meebeslissen over de toekomst van de gemeente. Daar is 30% van de bevolking jonger dan 25.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-POL-O": {
+   "language": "Dutch",
+   "subject": "Laten zien wat er veranderde",
+   "body": "Dag {{Recipient.FirstName}},\n\nBij veel gemeenten van jullie omvang zie ik hetzelfde: elk team draait zijn eigen participatie, inwoners krijgen dezelfde vraag twee keer en niemand heeft het totaalbeeld. Met de Omgevingswet wordt dat snel duur.\n\nInwoners blijven betrokken als ze zien wat er veranderde door wat ze zeiden. Dat is iets wat je kunt laten zien.\n\nGoeree-Overflakkee (52.000 inwoners) bereikt inmiddels één op de vijf huishoudens via één participatieplatform, bij groot beleid en bij kleine lokale projecten.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-POL-W": {
+   "language": "Dutch",
+   "subject": "Wie er gehoord is, en wat het veranderde",
+   "body": "Dag {{Recipient.FirstName}},\n\nOp jullie schaal zit de echte uitdaging in twee dingen: aantonen dat de input representatief is, en duizenden reacties omzetten in iets waar het college mee verder kan.\n\nOp deze schaal draait het om legitimiteit: besluiten landen beter als je kunt laten zien wie er gehoord is en wat dat veranderde.\n\nAmstelveen en Aalsmeer (samen 90.750 inwoners) stapten over van losse tools en inspraakavonden naar één platform, en draaiden sindsdien meer dan 100 projecten met meer dan 11.500 deelnemers.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "NL-GEN": {
+   "language": "Dutch",
+   "subject": "Dezelfde vraag, twee keer gesteld",
+   "body": "Dag {{Recipient.FirstName}},\n\nBij veel gemeenten van jullie omvang zie ik hetzelfde: elk team draait zijn eigen participatie, inwoners krijgen dezelfde vraag twee keer en niemand heeft het totaalbeeld. Met de Omgevingswet wordt dat snel duur.\n\nGoeree-Overflakkee (52.000 inwoners) bereikt inmiddels één op de vijf huishoudens via één participatieplatform, bij groot beleid en bij kleine lokale projecten.\n\nZou je openstaan voor een kort gesprek in de komende weken? Een reactie op deze mail is genoeg.",
+   "status": "DRAFT"
+  },
+  "BE-ENG-S": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Participatie met een klein team",
+   "body": "Dag {{Recipient.FirstName}},\n\nIn veel kleinere gemeenten hangt participatie aan één persoon die het erbij doet. Het gebeurt als er tijd voor is.\n\nAls u dit grotendeels alleen doet, moet de tooling u tijd besparen.\n\nIn Leuven (101.000 inwoners) droegen meer dan 3.000 inwoners bij aan het meerjarenplan van de stad, in het allereerste participatieproject.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-ENG-O": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Participatie op één plek",
+   "body": "Dag {{Recipient.FirstName}},\n\nHet meerjarenplan vraagt breed gedragen input van inwoners. Toch zitten de tools vaak verspreid over verschillende diensten, en komt de data nooit samen.\n\nU bent degene die het proces moet laten werken en de resultaten nadien moet uitleggen, vaak aan mensen die er niet bij waren.\n\nIn Leuven (101.000 inwoners) droegen meer dan 3.000 inwoners bij aan het meerjarenplan van de stad, in het allereerste participatieproject.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-ENG-W": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Is de input representatief?",
+   "body": "Dag {{Recipient.FirstName}},\n\nOp deze schaal is de echte uitdaging aantonen dat de input representatief is.\n\nDaarop wordt u beoordeeld, meer dan op het aantal reacties.\n\nGent (260.000 inwoners) werkt met een burgerbudget via buurtpanels, en combineert zo de schaal van een grote stad met een lokaal gevoel.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-DIR-S": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Participatie zonder extra systeem",
+   "body": "Dag {{Recipient.FirstName}},\n\nIn veel kleinere gemeenten hangt participatie aan één persoon die het erbij doet. Het gebeurt als er tijd voor is.\n\nMet een team van deze omvang overleeft niets dat een aparte beheerder nodig heeft het eerste drukke kwartaal.\n\nIn Leuven (101.000 inwoners) droegen meer dan 3.000 inwoners bij aan het meerjarenplan van de stad, in het allereerste participatieproject.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-DIR-O": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Eén standaard voor alle diensten",
+   "body": "Dag {{Recipient.FirstName}},\n\nHet meerjarenplan vraagt breed gedragen input van inwoners. Toch zitten de tools vaak verspreid over verschillende diensten, en komt de data nooit samen.\n\nEén systeem voor alle diensten betekent minder dubbel werk en één plek om te kijken als iemand vraagt wat inwoners echt zeiden.\n\nIn Leuven (101.000 inwoners) droegen meer dan 3.000 inwoners bij aan het meerjarenplan van de stad, in het allereerste participatieproject.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-DIR-W": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Dezelfde aanpak in elke dienst",
+   "body": "Dag {{Recipient.FirstName}},\n\nOp deze schaal is de echte uitdaging aantonen dat de input representatief is.\n\nOp deze schaal zit de winst in consistentie: dezelfde standaard en dezelfde rapportering, welke dienst het project ook trekt.\n\nGent (260.000 inwoners) werkt met een burgerbudget via buurtpanels, en combineert zo de schaal van een grote stad met een lokaal gevoel.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-POL-S": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Tonen wat inbreng oplevert",
+   "body": "Dag {{Recipient.FirstName}},\n\nIn veel kleinere gemeenten hangt participatie aan één persoon die het erbij doet. Het gebeurt als er tijd voor is.\n\nIn een kleine gemeenschap merken inwoners snel of hun inbreng ergens toe leidde, en u merkt dat ook.\n\nIn Leuven (101.000 inwoners) droegen meer dan 3.000 inwoners bij aan het meerjarenplan van de stad, in het allereerste participatieproject.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-POL-O": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Tonen wat er veranderde",
+   "body": "Dag {{Recipient.FirstName}},\n\nHet meerjarenplan vraagt breed gedragen input van inwoners. Toch zitten de tools vaak verspreid over verschillende diensten, en komt de data nooit samen.\n\nInwoners blijven betrokken als ze zien wat er veranderde door wat ze zeiden. Dat kunt u laten zien.\n\nIn Leuven (101.000 inwoners) droegen meer dan 3.000 inwoners bij aan het meerjarenplan van de stad, in het allereerste participatieproject.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-POL-W": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Wie gehoord werd, en wat het veranderde",
+   "body": "Dag {{Recipient.FirstName}},\n\nOp deze schaal is de echte uitdaging aantonen dat de input representatief is.\n\nOp deze schaal draait het om legitimiteit: beslissingen landen beter als u kunt tonen wie gehoord werd en wat dat veranderde.\n\nGent (260.000 inwoners) werkt met een burgerbudget via buurtpanels, en combineert zo de schaal van een grote stad met een lokaal gevoel.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "BE-GEN": {
+   "language": "Dutch (Flemish), formal u",
+   "subject": "Breed gedragen input voor het meerjarenplan",
+   "body": "Dag {{Recipient.FirstName}},\n\nHet meerjarenplan vraagt breed gedragen input van inwoners. Toch zitten de tools vaak verspreid over verschillende diensten, en komt de data nooit samen.\n\nIn Leuven (101.000 inwoners) droegen meer dan 3.000 inwoners bij aan het meerjarenplan van de stad, in het allereerste participatieproject.\n\nHebt u in de komende weken tijd voor een kort gesprek? Een antwoord op deze mail volstaat.",
+   "status": "DRAFT"
+  },
+  "FR-ENG-S": {
+   "language": "French, vous",
+   "subject": "La concertation avec une petite équipe",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nDans une petite commune, la concertation repose souvent sur une personne qui la mène en plus du reste. Elle avance quand le temps le permet.\n\nQuand on porte la concertation presque sans équipe, l'outil doit faire gagner du temps.\n\nÀ Charenton-le-Pont (31 000 habitants), aux portes de Paris, le plan vélo a été co-construit avec les habitants dès le départ.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-ENG-O": {
+   "language": "French, vous",
+   "subject": "Expliquer ce que disent les habitants",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nChaque service lance sa propre démarche, les habitants sont sollicités plusieurs fois, et personne ne dispose d'une vue d'ensemble des contributions.\n\nC'est vous qui devez faire fonctionner la démarche, puis en expliquer les résultats, souvent à des personnes qui n'étaient pas dans la salle.\n\nÀ Charenton-le-Pont (31 000 habitants), aux portes de Paris, le plan vélo a été co-construit avec les habitants dès le départ.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-ENG-W": {
+   "language": "French, vous",
+   "subject": "Des contributions vraiment représentatives",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nÀ cette échelle, la vraie difficulté est de prouver que les contributions sont représentatives et d'en tirer une décision défendable.\n\nC'est sur ce point qu'on vous juge, bien plus que sur le nombre de contributions.\n\nGrand Paris Sud (346 826 habitants), structure intercommunale au sud de Paris, a confié son travail sur le climat à celles et ceux qui connaissent le mieux le territoire.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-DIR-S": {
+   "language": "French, vous",
+   "subject": "Concerter sans outil de plus à gérer",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nDans une petite commune, la concertation repose souvent sur une personne qui la mène en plus du reste. Elle avance quand le temps le permet.\n\nAvec une équipe de cette taille, un outil qui demande un administrateur dédié ne survit pas au premier trimestre chargé.\n\nÀ Charenton-le-Pont (31 000 habitants), aux portes de Paris, le plan vélo a été co-construit avec les habitants dès le départ.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-DIR-O": {
+   "language": "French, vous",
+   "subject": "Une même méthode pour tous les services",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nChaque service lance sa propre démarche, les habitants sont sollicités plusieurs fois, et personne ne dispose d'une vue d'ensemble des contributions.\n\nUn seul outil pour tous les services, c'est moins de temps perdu en doublons et un seul endroit où regarder quand on vous demande ce que les habitants ont vraiment dit.\n\nÀ Charenton-le-Pont (31 000 habitants), aux portes de Paris, le plan vélo a été co-construit avec les habitants dès le départ.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-DIR-W": {
+   "language": "French, vous",
+   "subject": "La même méthode, quel que soit le service",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nÀ cette échelle, la vraie difficulté est de prouver que les contributions sont représentatives et d'en tirer une décision défendable.\n\nÀ votre échelle, la valeur tient dans la cohérence : même méthode, même restitution, quel que soit le service qui porte le projet.\n\nGrand Paris Sud (346 826 habitants), structure intercommunale au sud de Paris, a confié son travail sur le climat à celles et ceux qui connaissent le mieux le territoire.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-POL-S": {
+   "language": "French, vous",
+   "subject": "Montrer que l'avis des habitants compte",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nDans une petite commune, la concertation repose souvent sur une personne qui la mène en plus du reste. Elle avance quand le temps le permet.\n\nLes habitants voient vite si leur avis a servi à quelque chose, et vous aussi.\n\nÀ Charenton-le-Pont (31 000 habitants), aux portes de Paris, le plan vélo a été co-construit avec les habitants dès le départ.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-POL-O": {
+   "language": "French, vous",
+   "subject": "Montrer ce qui a changé",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nChaque service lance sa propre démarche, les habitants sont sollicités plusieurs fois, et personne ne dispose d'une vue d'ensemble des contributions.\n\nLes habitants restent impliqués quand ils voient ce qui a changé grâce à leur avis, et c'est quelque chose que vous pouvez montrer.\n\nÀ Charenton-le-Pont (31 000 habitants), aux portes de Paris, le plan vélo a été co-construit avec les habitants dès le départ.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-POL-W": {
+   "language": "French, vous",
+   "subject": "Qui a été entendu, et ce que cela a changé",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nÀ cette échelle, la vraie difficulté est de prouver que les contributions sont représentatives et d'en tirer une décision défendable.\n\nÀ cette échelle, tout se joue sur la légitimité : une décision passe mieux quand on peut montrer qui a été entendu et ce que cela a changé.\n\nGrand Paris Sud (346 826 habitants), structure intercommunale au sud de Paris, a confié son travail sur le climat à celles et ceux qui connaissent le mieux le territoire.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "FR-GEN": {
+   "language": "French, vous",
+   "subject": "Une vue d'ensemble des contributions",
+   "body": "Bonjour {{Recipient.FirstName}},\n\nChaque service lance sa propre démarche, les habitants sont sollicités plusieurs fois, et personne ne dispose d'une vue d'ensemble des contributions.\n\nÀ Charenton-le-Pont (31 000 habitants), aux portes de Paris, le plan vélo a été co-construit avec les habitants dès le départ.\n\nSeriez-vous disponible pour un court échange dans les semaines qui viennent ? Il suffit de répondre à ce message.",
+   "status": "DRAFT"
+  },
+  "DACH-ENG-S": {
+   "language": "German, Sie",
+   "subject": "Beteiligung mit kleinem Team",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nIn kleinen Kommunen hängt Bürgerbeteiligung oft an einer engagierten Person. Hat diese gerade anderes zu tun, steht sie still.\n\nWenn Sie das weitgehend allein stemmen, muss ein Werkzeug Ihnen Zeit sparen.\n\nNeckarsulm (26.500 Einwohner) hat in den ersten acht Wochen mehr als 60 der ersten 100 gemeldeten Anliegen gelöst. Die Bürgerinnen und Bürger konnten den Status verfolgen und bekamen eine Nachricht, sobald es erledigt war.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-ENG-O": {
+   "language": "German, Sie",
+   "subject": "Ergebnisse, die man erklären kann",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nFörmliche Beteiligungsverfahren laufen, weil sie vorgeschrieben sind. Die alltägliche Beteiligung, die Vertrauen schafft, geht oft zwischen den Ämtern verloren.\n\nBei Ihnen liegt es, den Prozess zum Laufen zu bringen und die Ergebnisse danach zu erklären, meist Menschen, die nicht dabei waren.\n\nNeckarsulm (26.500 Einwohner) hat in den ersten acht Wochen mehr als 60 der ersten 100 gemeldeten Anliegen gelöst. Die Bürgerinnen und Bürger konnten den Status verfolgen und bekamen eine Nachricht, sobald es erledigt war.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-ENG-W": {
+   "language": "German, Sie",
+   "subject": "Repräsentativ genug für Entscheidungen",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nIn großen Städten gibt es viele Beteiligungsprojekte, aber selten einen Ort, an dem alle zusammenlaufen. So lassen sich Ergebnisse kaum vergleichen, und jeder Bericht wird von Hand neu gebaut.\n\nGemessen werden Sie daran, ob die Beteiligung repräsentativ war.\n\nInnsbruck (132.200 Einwohner) hat junge Menschen innerhalb weniger Wochen ins Zentrum der Entscheidungen geholt: Über 1.000 haben sich registriert, und die Jugend war dabei überrepräsentiert.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-DIR-S": {
+   "language": "German, Sie",
+   "subject": "Beteiligung ohne zusätzliches System",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nIn kleinen Kommunen hängt Bürgerbeteiligung oft an einer engagierten Person. Hat diese gerade anderes zu tun, steht sie still.\n\nBei einem Team dieser Größe hält sich kein Werkzeug, das eigens betreut werden muss, länger als ein volles Quartal.\n\nNeckarsulm (26.500 Einwohner) hat in den ersten acht Wochen mehr als 60 der ersten 100 gemeldeten Anliegen gelöst. Die Bürgerinnen und Bürger konnten den Status verfolgen und bekamen eine Nachricht, sobald es erledigt war.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-DIR-O": {
+   "language": "German, Sie",
+   "subject": "Ein Standard für alle Ämter",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nFörmliche Beteiligungsverfahren laufen, weil sie vorgeschrieben sind. Die alltägliche Beteiligung, die Vertrauen schafft, geht oft zwischen den Ämtern verloren.\n\nEin System für alle Ämter heißt: weniger doppelte Arbeit und ein Ort, an dem Sie nachsehen können, was die Bürgerinnen und Bürger wirklich gesagt haben.\n\nNeckarsulm (26.500 Einwohner) hat in den ersten acht Wochen mehr als 60 der ersten 100 gemeldeten Anliegen gelöst. Die Bürgerinnen und Bürger konnten den Status verfolgen und bekamen eine Nachricht, sobald es erledigt war.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-DIR-W": {
+   "language": "German, Sie",
+   "subject": "Gleicher Standard in jedem Amt",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nIn großen Städten gibt es viele Beteiligungsprojekte, aber selten einen Ort, an dem alle zusammenlaufen. So lassen sich Ergebnisse kaum vergleichen, und jeder Bericht wird von Hand neu gebaut.\n\nIn Ihrer Größenordnung liegt der Wert in der Einheitlichkeit: gleicher Standard, gleiche Berichte, egal welches Amt das Projekt führt.\n\nInnsbruck (132.200 Einwohner) hat junge Menschen innerhalb weniger Wochen ins Zentrum der Entscheidungen geholt: Über 1.000 haben sich registriert, und die Jugend war dabei überrepräsentiert.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-POL-S": {
+   "language": "German, Sie",
+   "subject": "Zeigen, dass Beteiligung wirkt",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nIn kleinen Kommunen hängt Bürgerbeteiligung oft an einer engagierten Person. Hat diese gerade anderes zu tun, steht sie still.\n\nIn einer Gemeinde dieser Größe merken die Menschen schnell, ob ihre Rückmeldung etwas bewirkt hat. Sie merken es auch.\n\nNeckarsulm (26.500 Einwohner) hat in den ersten acht Wochen mehr als 60 der ersten 100 gemeldeten Anliegen gelöst. Die Bürgerinnen und Bürger konnten den Status verfolgen und bekamen eine Nachricht, sobald es erledigt war.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-POL-O": {
+   "language": "German, Sie",
+   "subject": "Zeigen, was sich verändert hat",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nFörmliche Beteiligungsverfahren laufen, weil sie vorgeschrieben sind. Die alltägliche Beteiligung, die Vertrauen schafft, geht oft zwischen den Ämtern verloren.\n\nBürgerinnen und Bürger bleiben dabei, wenn sie sehen, was sich durch ihre Rückmeldung verändert hat. Genau das können Sie vorweisen.\n\nNeckarsulm (26.500 Einwohner) hat in den ersten acht Wochen mehr als 60 der ersten 100 gemeldeten Anliegen gelöst. Die Bürgerinnen und Bürger konnten den Status verfolgen und bekamen eine Nachricht, sobald es erledigt war.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-POL-W": {
+   "language": "German, Sie",
+   "subject": "Wer gehört wurde und was es bewirkt hat",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nIn großen Städten gibt es viele Beteiligungsprojekte, aber selten einen Ort, an dem alle zusammenlaufen. So lassen sich Ergebnisse kaum vergleichen, und jeder Bericht wird von Hand neu gebaut.\n\nIn dieser Größenordnung geht es um Legitimität: Entscheidungen werden besser angenommen, wenn Sie zeigen können, wer gehört wurde und was es bewirkt hat.\n\nInnsbruck (132.200 Einwohner) hat junge Menschen innerhalb weniger Wochen ins Zentrum der Entscheidungen geholt: Über 1.000 haben sich registriert, und die Jugend war dabei überrepräsentiert.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "DACH-GEN": {
+   "language": "German, Sie",
+   "subject": "Beteiligung zwischen den Ämtern",
+   "body": "Guten Tag {{Recipient.FirstName}} {{Recipient.LastName}},\n\nFörmliche Beteiligungsverfahren laufen, weil sie vorgeschrieben sind. Die alltägliche Beteiligung, die Vertrauen schafft, geht oft zwischen den Ämtern verloren.\n\nNeckarsulm (26.500 Einwohner) hat in den ersten acht Wochen mehr als 60 der ersten 100 gemeldeten Anliegen gelöst. Die Bürgerinnen und Bürger konnten den Status verfolgen und bekamen eine Nachricht, sobald es erledigt war.\n\nHätten Sie in den nächsten Wochen Zeit für ein kurzes Gespräch? Eine kurze Antwort auf diese E-Mail genügt.",
+   "status": "DRAFT"
+  },
+  "NORDICS-ENG-S": {
+   "language": "English",
+   "subject": "Running engagement with a small team",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of smaller municipalities, participation depends on one person's energy. When that person is on other work, it pauses.\n\nIf you are running this largely on your own, the tooling has to save you time.\n\nLejre (29,600 residents) engaged one in seven residents with a hybrid process people could join from anywhere, at any time, supported by AI analysis.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Borgerinddragelse med et lille team",
+     "body": "Hej {{Recipient.FirstName}},\n\nI mange mindre kommuner afhænger borgerinddragelsen af én persons energi. Når den person er optaget af andre opgaver, går det i stå.\n\nHvis du stort set står med det alene, skal værktøjerne spare dig tid.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-ENG-O": {
+   "language": "English",
+   "subject": "Explaining what residents said",
+   "body": "Hi {{Recipient.FirstName}},\n\nHybrid participation is expected now. Running it well across several projects with one small team is where it tends to break down.\n\nYou are the one who has to make the process work and then explain the results, usually to people who were not in the room.\n\nLejre (29,600 residents) engaged one in seven residents with a hybrid process people could join from anywhere, at any time, supported by AI analysis.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "At forklare, hvad borgerne sagde",
+     "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nDet er dig, der skal få processen til at fungere og bagefter forklare resultaterne – ofte til folk, der ikke selv var med.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-ENG-W": {
+   "language": "English",
+   "subject": "Representative enough to act on",
+   "body": "Hi {{Recipient.FirstName}},\n\nAt your scale, the hard part is getting from thousands of proposals to a defensible shortlist, quickly.\n\nYou are judged on whether the input was representative.\n\nCopenhagen (647,509 residents) got 12,000 residents to take part in a large-scale proposals project in just four months.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Repræsentativt nok til at handle på",
+     "body": "Hej {{Recipient.FirstName}},\n\nI jeres størrelse er det svære at komme fra tusindvis af forslag til en kortliste, I kan stå inde for – og at gøre det hurtigt.\n\nDu bliver målt på, om inputtet var repræsentativt.\n\nKøbenhavn (647.509 indbyggere) fik 12.000 borgere til at deltage i et stort forslagsprojekt på bare fire måneder.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-DIR-S": {
+   "language": "English",
+   "subject": "Engagement without another system to run",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of smaller municipalities, participation depends on one person's energy. When that person is on other work, it pauses.\n\nWith a team this size, anything that needs a dedicated administrator will not survive its first busy quarter.\n\nLejre (29,600 residents) engaged one in seven residents with a hybrid process people could join from anywhere, at any time, supported by AI analysis.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Borgerinddragelse uden endnu et system at drive",
+     "body": "Hej {{Recipient.FirstName}},\n\nI mange mindre kommuner afhænger borgerinddragelsen af én persons energi. Når den person er optaget af andre opgaver, går det i stå.\n\nMed et team af denne størrelse overlever noget, der kræver en dedikeret administrator, ikke det første travle kvartal.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-DIR-O": {
+   "language": "English",
+   "subject": "One standard across departments",
+   "body": "Hi {{Recipient.FirstName}},\n\nHybrid participation is expected now. Running it well across several projects with one small team is where it tends to break down.\n\nOne system across departments means less duplicated staff time and one place to look when someone asks what residents actually said.\n\nLejre (29,600 residents) engaged one in seven residents with a hybrid process people could join from anywhere, at any time, supported by AI analysis.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Én standard på tværs af forvaltninger",
+     "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nÉt system på tværs af forvaltninger betyder mindre dobbeltarbejde og ét sted at kigge, når nogen spørger, hvad borgerne faktisk sagde.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-DIR-W": {
+   "language": "English",
+   "subject": "Same standard, whichever team runs it",
+   "body": "Hi {{Recipient.FirstName}},\n\nAt your scale, the hard part is getting from thousands of proposals to a defensible shortlist, quickly.\n\nThe value at your scale is consistency: same standard, same reporting, whichever department runs the project.\n\nCopenhagen (647,509 residents) got 12,000 residents to take part in a large-scale proposals project in just four months.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Samme standard, uanset hvem der står for det",
+     "body": "Hej {{Recipient.FirstName}},\n\nI jeres størrelse er det svære at komme fra tusindvis af forslag til en kortliste, I kan stå inde for – og at gøre det hurtigt.\n\nVærdien i jeres størrelse er ensartethed: samme standard og samme rapportering, uanset hvilken forvaltning der står for projektet.\n\nKøbenhavn (647.509 indbyggere) fik 12.000 borgere til at deltage i et stort forslagsprojekt på bare fire måneder.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-POL-S": {
+   "language": "English",
+   "subject": "Showing residents their input counted",
+   "body": "Hi {{Recipient.FirstName}},\n\nIn a lot of smaller municipalities, participation depends on one person's energy. When that person is on other work, it pauses.\n\nIn a place this size residents notice quickly whether their input went anywhere, and so do you.\n\nLejre (29,600 residents) engaged one in seven residents with a hybrid process people could join from anywhere, at any time, supported by AI analysis.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Vis borgerne, at deres input talte",
+     "body": "Hej {{Recipient.FirstName}},\n\nI mange mindre kommuner afhænger borgerinddragelsen af én persons energi. Når den person er optaget af andre opgaver, går det i stå.\n\nI en kommune af denne størrelse lægger borgerne hurtigt mærke til, om deres input førte nogen vegne – og det gør du også.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-POL-O": {
+   "language": "English",
+   "subject": "Showing residents what changed",
+   "body": "Hi {{Recipient.FirstName}},\n\nHybrid participation is expected now. Running it well across several projects with one small team is where it tends to break down.\n\nResidents stay engaged when they can see what changed because of what they said, and that is something you can point to.\n\nLejre (29,600 residents) engaged one in seven residents with a hybrid process people could join from anywhere, at any time, supported by AI analysis.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Vis borgerne, hvad der ændrede sig",
+     "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nBorgerne forbliver engagerede, når de kan se, hvad der ændrede sig på grund af det, de sagde – og det er noget, du kan pege på.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-POL-W": {
+   "language": "English",
+   "subject": "Who was heard, and what it changed",
+   "body": "Hi {{Recipient.FirstName}},\n\nAt your scale, the hard part is getting from thousands of proposals to a defensible shortlist, quickly.\n\nLegitimacy is the point at this scale: decisions land better when you can show who was heard and what it changed.\n\nCopenhagen (647,509 residents) got 12,000 residents to take part in a large-scale proposals project in just four months.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Hvem blev hørt, og hvad ændrede det",
+     "body": "Hej {{Recipient.FirstName}},\n\nI jeres størrelse er det svære at komme fra tusindvis af forslag til en kortliste, I kan stå inde for – og at gøre det hurtigt.\n\nLegitimitet er det afgørende i denne størrelse: beslutninger bliver bedre modtaget, når du kan vise, hvem der blev hørt, og hvad det ændrede.\n\nKøbenhavn (647.509 indbyggere) fik 12.000 borgere til at deltage i et stort forslagsprojekt på bare fire måneder.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  },
+  "NORDICS-GEN": {
+   "language": "English",
+   "subject": "Hybrid participation with a small team",
+   "body": "Hi {{Recipient.FirstName}},\n\nHybrid participation is expected now. Running it well across several projects with one small team is where it tends to break down.\n\nLejre (29,600 residents) engaged one in seven residents with a hybrid process people could join from anywhere, at any time, supported by AI analysis.\n\nWould a short call in the next couple of weeks be useful? Just reply to this email and we'll find a time.",
+   "status": "DRAFT",
+   "variants": {
+    "da": {
+     "language": "Danish",
+     "subject": "Hybrid borgerinddragelse med et lille team",
+     "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
+    }
+   }
+  }
+ }
+}

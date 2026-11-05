@@ -1,0 +1,1403 @@
+{
+  "_about": "Everything assign_persona_keys.py decides with. Sections: markets (country -> content market and size bands), size (Shrimps/Octopus/Whales bands from the scoring rulebook v0.99.7 section 2.2), personas (job-title keywords; patterns run on a lower-cased, accent-free title), eligibility (who gets a key). Change a list here and run the tests.",
+  "markets": {
+    "markets": {
+      "NAM": {
+        "label": "NorAm",
+        "asset_market": "NorAm",
+        "language": "English (US)"
+      },
+      "UKI": {
+        "label": "UK & Ireland",
+        "asset_market": "UK & I",
+        "language": "English (UK)"
+      },
+      "NL": {
+        "label": "Netherlands",
+        "asset_market": "NL",
+        "language": "Dutch"
+      },
+      "BE": {
+        "label": "Belgium, Dutch-speaking",
+        "asset_market": "BE",
+        "language": "Dutch (Flemish)"
+      },
+      "FR": {
+        "label": "France and French-speaking",
+        "asset_market": "France",
+        "language": "French"
+      },
+      "DACH": {
+        "label": "DACH",
+        "asset_market": "DACH",
+        "language": "German"
+      },
+      "NORDICS": {
+        "label": "Nordics",
+        "asset_market": "Nordics",
+        "language": "English"
+      }
+    },
+    "countries": {
+      "US": {
+        "market": "NAM",
+        "bands": "NAM"
+      },
+      "PR": {
+        "market": "NAM",
+        "bands": "NAM"
+      },
+      "CA": {
+        "market": "NAM",
+        "bands": "NAM",
+        "split": "CA"
+      },
+      "UK": {
+        "market": "UKI",
+        "bands": "UKI",
+        "_note": "this org's CountryCode for the United Kingdom"
+      },
+      "GB": {
+        "market": "UKI",
+        "bands": "UKI",
+        "_note": "labelled England in this org"
+      },
+      "IE": {
+        "market": "UKI",
+        "bands": "UKI"
+      },
+      "IM": {
+        "market": "UKI",
+        "bands": "UKI"
+      },
+      "JE": {
+        "market": "UKI",
+        "bands": "UKI"
+      },
+      "GG": {
+        "market": "UKI",
+        "bands": "UKI"
+      },
+      "NL": {
+        "market": "NL",
+        "bands": "NL"
+      },
+      "BQ": {
+        "market": "NL",
+        "bands": "NL"
+      },
+      "BE": {
+        "market": "BE",
+        "bands": "BE",
+        "split": "BE"
+      },
+      "FR": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "MC": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "GP": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "MQ": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "GF": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "RE": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "YT": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "PM": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "BL": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "MF": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "NC": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "PF": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "WF": {
+        "market": "FR",
+        "bands": "FR"
+      },
+      "LU": {
+        "market": "FR",
+        "bands": "FR_REST"
+      },
+      "DE": {
+        "market": "DACH",
+        "bands": "DACH"
+      },
+      "AT": {
+        "market": "DACH",
+        "bands": "DACH"
+      },
+      "LI": {
+        "market": "DACH",
+        "bands": "DACH"
+      },
+      "CH": {
+        "market": "DACH",
+        "bands": "DACH",
+        "split": "CH"
+      },
+      "DK": {
+        "market": "NORDICS",
+        "bands": "NORDICS"
+      },
+      "GL": {
+        "market": "NORDICS",
+        "bands": "NORDICS"
+      },
+      "FO": {
+        "market": "NORDICS",
+        "bands": "NORDICS"
+      },
+      "SE": {
+        "market": "NORDICS",
+        "bands": "NORDICS"
+      },
+      "NO": {
+        "market": "NORDICS",
+        "bands": "NORDICS"
+      },
+      "FI": {
+        "market": "NORDICS",
+        "bands": "NORDICS"
+      },
+      "IS": {
+        "market": "NORDICS",
+        "bands": "NORDICS"
+      },
+      "AX": {
+        "market": "NORDICS",
+        "bands": "NORDICS"
+      },
+      "AU": {
+        "market": "NAM",
+        "bands": "ANZ"
+      },
+      "NZ": {
+        "market": "NAM",
+        "bands": "ANZ"
+      },
+      "IT": {
+        "market": "NAM",
+        "bands": "IT"
+      },
+      "SM": {
+        "market": "NAM",
+        "bands": "IT"
+      },
+      "VA": {
+        "market": "NAM",
+        "bands": "IT"
+      },
+      "SN": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "CI": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "CM": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "CD": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "CG": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "MA": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "TN": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "DZ": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "ML": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "BF": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "NE": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "BJ": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "TG": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "GN": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "GA": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "MG": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "HT": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "MR": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "TD": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "CF": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "DJ": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "KM": {
+        "market": "FR",
+        "bands": "OTHER"
+      },
+      "BI": {
+        "market": "FR",
+        "bands": "OTHER"
+      }
+    },
+    "default_country": {
+      "market": "NAM",
+      "bands": "OTHER",
+      "_note": "every other country: English NorAm content (asset map Fallbacks)"
+    },
+    "splits": {
+      "CA": {
+        "_about": "Quebec gets French content and the Francophonie-rest bands (rulebook 2.2).",
+        "french_states": [
+          "QC"
+        ],
+        "french_regions": [
+          "quebec",
+          "québec"
+        ],
+        "french": {
+          "market": "FR",
+          "bands": "FR_REST"
+        }
+      },
+      "CH": {
+        "_about": "French-speaking cantons get French content (Francophonie-rest bands); Ticino gets English. This org prefixes Swiss canton codes with CH.",
+        "french_states": [
+          "CHGE",
+          "CHVD",
+          "CHNE",
+          "CHJU",
+          "CHFR",
+          "CHVA",
+          "GE",
+          "VD",
+          "NE",
+          "JU",
+          "FR",
+          "VS"
+        ],
+        "french_regions": [
+          "genève",
+          "geneve",
+          "vaud",
+          "neuchâtel",
+          "neuchatel",
+          "jura",
+          "fribourg",
+          "valais"
+        ],
+        "italian_states": [
+          "CHTI",
+          "TI"
+        ],
+        "italian_regions": [
+          "ticino"
+        ],
+        "french": {
+          "market": "FR",
+          "bands": "FR_REST"
+        },
+        "italian": {
+          "market": "NAM",
+          "bands": "DACH"
+        }
+      },
+      "BE": {
+        "_about": "Flanders gets BE (Dutch) content, Wallonia FR (French) content; both use the BE bands. Brussels is decided by the organisation's name, else it goes to review.",
+        "dutch_states": [
+          "BEVAN",
+          "BEVBR",
+          "BEVLI",
+          "BEVOV",
+          "BEVWV"
+        ],
+        "french_states": [
+          "BEWAL",
+          "BEWBR",
+          "BEWHT",
+          "BEWLG",
+          "BEWLX",
+          "BEWNA"
+        ],
+        "brussels_states": [
+          "BEBRU"
+        ],
+        "dutch_postal_ranges": [
+          [
+            1500,
+            3999
+          ],
+          [
+            8000,
+            9999
+          ]
+        ],
+        "french_postal_ranges": [
+          [
+            1300,
+            1499
+          ],
+          [
+            4000,
+            7999
+          ]
+        ],
+        "brussels_postal_ranges": [
+          [
+            1000,
+            1299
+          ]
+        ],
+        "french": {
+          "market": "FR",
+          "bands": "BE"
+        }
+      }
+    },
+    "name_language_markers": {
+      "_about": "Words in the organisation's name that give away its language. Used for the BE, CH and CA splits, and as a sanity check on the lead's country (a 'Gemeente' with country Belarus goes to review).",
+      "dutch": [
+        "gemeente",
+        "ocmw",
+        "provincie",
+        "lokaal bestuur",
+        "politiezone"
+      ],
+      "french": [
+        "commune",
+        "ville ",
+        "ville de",
+        "cpas",
+        "province de",
+        "administration communale",
+        "municipalité",
+        "municipalite",
+        "mrc ",
+        "mairie",
+        "cité de",
+        "canton de",
+        "état de"
+      ],
+      "german": [
+        "gemeinde",
+        "stadt",
+        "kanton ",
+        "bezirk"
+      ],
+      "italian": [
+        "comune",
+        "città",
+        "citta"
+      ],
+      "nordic": [
+        "kommune",
+        "kommun",
+        "kommuneqarfik",
+        "kunta",
+        "kaupunki"
+      ]
+    },
+    "country_names": {
+      "_about": "Free-text Country values (when CountryCode is empty) mapped to a code.",
+      "united states": "US",
+      "united states of america": "US",
+      "usa": "US",
+      "us": "US",
+      "u.s.": "US",
+      "u.s.a.": "US",
+      "canada": "CA",
+      "united kingdom": "UK",
+      "uk": "UK",
+      "england": "UK",
+      "scotland": "UK",
+      "wales": "UK",
+      "northern ireland": "UK",
+      "great britain": "UK",
+      "ireland": "IE",
+      "éire": "IE",
+      "netherlands": "NL",
+      "the netherlands": "NL",
+      "nederland": "NL",
+      "holland": "NL",
+      "belgium": "BE",
+      "belgië": "BE",
+      "belgie": "BE",
+      "belgique": "BE",
+      "belgien": "BE",
+      "france": "FR",
+      "luxembourg": "LU",
+      "monaco": "MC",
+      "germany": "DE",
+      "deutschland": "DE",
+      "austria": "AT",
+      "österreich": "AT",
+      "osterreich": "AT",
+      "switzerland": "CH",
+      "schweiz": "CH",
+      "suisse": "CH",
+      "svizzera": "CH",
+      "liechtenstein": "LI",
+      "denmark": "DK",
+      "danmark": "DK",
+      "greenland": "GL",
+      "kalaallit nunaat": "GL",
+      "faroe islands": "FO",
+      "sweden": "SE",
+      "sverige": "SE",
+      "norway": "NO",
+      "norge": "NO",
+      "finland": "FI",
+      "suomi": "FI",
+      "iceland": "IS",
+      "australia": "AU",
+      "new zealand": "NZ",
+      "italy": "IT",
+      "italia": "IT"
+    },
+    "cctld": {
+      "_about": "Country-code top-level domains, used as a cross-check (and a last resort when nothing else names the country). Generic TLDs (.com, .org) say nothing.",
+      "nl": "NL",
+      "be": "BE",
+      "fr": "FR",
+      "lu": "LU",
+      "mc": "MC",
+      "de": "DE",
+      "at": "AT",
+      "ch": "CH",
+      "li": "LI",
+      "dk": "DK",
+      "gl": "GL",
+      "fo": "FO",
+      "se": "SE",
+      "no": "NO",
+      "fi": "FI",
+      "is": "IS",
+      "uk": "UK",
+      "ie": "IE",
+      "us": "US",
+      "gov": "US",
+      "ca": "CA",
+      "au": "AU",
+      "nz": "NZ",
+      "it": "IT"
+    }
+  },
+  "size": {
+    "bands": {
+      "NL": {
+        "shrimps_below": 30000,
+        "whales_from": 250000,
+        "status": "locked",
+        "source": "rulebook 2.2 NL"
+      },
+      "NAM": {
+        "shrimps_below": 50000,
+        "whales_from": 250000,
+        "status": "locked",
+        "source": "rulebook 2.2 NorAm (US + CA)"
+      },
+      "DACH": {
+        "shrimps_below": 20000,
+        "whales_from": 100000,
+        "status": "locked",
+        "source": "rulebook 2.2 DACH"
+      },
+      "UKI": {
+        "shrimps_below": 100000,
+        "whales_from": 250000,
+        "status": "locked",
+        "source": "rulebook 2.2 UK & I"
+      },
+      "BE": {
+        "shrimps_below": 30000,
+        "whales_from": 150000,
+        "status": "locked",
+        "source": "rulebook 2.2 BE / Flanders"
+      },
+      "FR": {
+        "shrimps_below": 20000,
+        "whales_from": 120000,
+        "status": "provisional",
+        "source": "rulebook 2.2 France gives no number for Whales; 120k is the 'Big 120k+' line of its France Market Sizes note"
+      },
+      "FR_REST": {
+        "shrimps_below": 10000,
+        "whales_from": 100000,
+        "status": "provisional",
+        "source": "rulebook 2.2 Francophonie rest (LU, QC, CH-FR) names Whales but gives no number; 100k puts Lausanne and Ville de Québec in Whales"
+      },
+      "NORDICS": {
+        "shrimps_below": 20000,
+        "whales_from": 100000,
+        "status": "provisional",
+        "source": "rulebook 2.2 Nordics (DK lead), provisional there too"
+      },
+      "ANZ": {
+        "shrimps_below": 30000,
+        "whales_from": 200000,
+        "status": "provisional",
+        "source": "rulebook 2.2 ANZ, provisional there too"
+      },
+      "IT": {
+        "shrimps_below": 30000,
+        "whales_from": 250000,
+        "status": "provisional",
+        "source": "rulebook 2.2 Italy, provisional there too"
+      },
+      "OTHER": {
+        "shrimps_below": 50000,
+        "whales_from": 250000,
+        "status": "provisional",
+        "source": "no rulebook band for the Global lane; NorAm's bands used as the default"
+      }
+    },
+    "regional_bodies": {
+      "_about": "The rulebook band table puts provinces, counties, Länder, régions, combined authorities and water boards in Whales whatever their population.",
+      "org_types": [
+        "Regional government",
+        "Regional Government",
+        "Regional or National Government"
+      ],
+      "name_patterns": [
+        "\\bprovincie\\b",
+        "\\bprovince\\b",
+        "\\bcounty\\b",
+        "\\blandkreis\\b",
+        "\\bkreis\\b",
+        "\\blandratsamt\\b",
+        "\\bdepartement\\b",
+        "\\bconseil departemental\\b",
+        "\\bconseil regional\\b",
+        "^region\\b",
+        "\\bcombined authority\\b",
+        "\\bstrategic authority\\b",
+        "\\bwaterschap\\b",
+        "\\bhoogheemraadschap\\b",
+        "\\bregionsrad\\b",
+        "\\bbundesland\\b",
+        "\\bstate of\\b",
+        "\\bmetropolitan planning\\b",
+        "\\bgedeputeerde staten\\b"
+      ]
+    },
+    "inhabitants_bands": {
+      "_about": "Inhabitants__c is a band picklist on Lead (form answer) and Account. A band only decides the tier when both of its ends fall in the same tier for that market; otherwise size stays unknown.",
+      "<10,000": [
+        0,
+        10000
+      ],
+      "10,001 - 30,000": [
+        10001,
+        30000
+      ],
+      "30,001 - 100,000": [
+        30001,
+        100000
+      ],
+      "100,001 - 250,00": [
+        100001,
+        250000
+      ],
+      "100,001 - 250,000": [
+        100001,
+        250000
+      ],
+      ">250,000": [
+        250001,
+        100000000
+      ],
+      "&gt;250,000": [
+        250001,
+        100000000
+      ],
+      "<20k": [
+        0,
+        20000
+      ],
+      "&lt;20k": [
+        0,
+        20000
+      ],
+      "20k - 30k": [
+        20000,
+        30000
+      ],
+      "30k - 40k": [
+        30000,
+        40000
+      ],
+      "40k - 50k": [
+        40000,
+        50000
+      ],
+      "50k - 60k": [
+        50000,
+        60000
+      ],
+      "60k - 80k": [
+        60000,
+        80000
+      ],
+      "80k - 100k": [
+        80000,
+        100000
+      ],
+      "100k - 150k": [
+        100000,
+        150000
+      ],
+      "150k - 250k": [
+        150000,
+        250000
+      ],
+      "250k - 500k": [
+        250000,
+        500000
+      ],
+      "500k - 1 million": [
+        500000,
+        1000000
+      ],
+      "> 1 million": [
+        1000000,
+        100000000
+      ],
+      "&gt; 1 million": [
+        1000000,
+        100000000
+      ]
+    }
+  },
+  "personas": {
+    "junior": [
+      "\\bintern\\b",
+      "\\binternship\\b",
+      "\\bstagiair",
+      "\\bstagiaire\\b",
+      "\\bpraktikant",
+      "\\btrainee\\b",
+      "\\bstudent",
+      "werkstudent",
+      "\\bstudente\\b",
+      "\\betudiant",
+      "\\bapprenti",
+      "\\bapprentice\\b",
+      "\\bfellow\\b",
+      "\\badjointe? administrati",
+      "\\bemployee? d administration\\b",
+      "\\bemployee? administrati",
+      "\\bsecretaresse\\b",
+      "\\breceptionist\\b",
+      "\\breceptie\\b",
+      "\\badministratief medewerker\\b",
+      "\\badministrative assistant\\b",
+      "\\bsachbearbeiter",
+      "\\bverwaltungsangestellte",
+      "^(?!.*(manager|director|directeur|directrice|chief|head|city|county|town|deputy|executive|mayor|maire|minister)).*\\bassistant",
+      "^(?!.*(general|generale|gemeente|staats|state|town|city|county|board|mairie|permanent)).*\\bsecreta(ry|resse|ire|ria)\\b"
+    ],
+    "elected": [
+      "\\bmayor\\b",
+      "\\bcouncill?or\\b",
+      "\\bcouncil ?member\\b",
+      "\\bcouncilmember\\b",
+      "\\balder(man|woman|person)\\b",
+      "\\bselect ?(man|woman|person|board)\\b",
+      "\\bselectmen\\b",
+      "\\b(village|township|town) trustee\\b",
+      "\\b(county|city|town|borough) commissioner\\b",
+      "\\bpolice and crime commissioner\\b",
+      "\\bboard of (commissioners|supervisors|aldermen|selectmen)\\b",
+      "\\bcounty supervisor\\b",
+      "\\bcabinet member\\b",
+      "\\bportfolio holder\\b",
+      "\\bleader of the council\\b",
+      "\\bcouncil leader\\b",
+      "\\bmember of parliament\\b",
+      "\\bmp\\b",
+      "\\bsenator\\b",
+      "\\bstate representative\\b",
+      "\\bassembly ?member\\b",
+      "\\blegislator\\b",
+      "\\belected\\b",
+      "\\bchief of staff\\b",
+      "\\bdemocratic services\\b",
+      "burgemeester",
+      "wethouder",
+      "\\braadslid\\b",
+      "\\braadsleden\\b",
+      "gemeenteraadslid",
+      "fractievoorzitter",
+      "\\bfractie",
+      "statenlid",
+      "gedeputeerde",
+      "griffier",
+      "\\bgriffie\\b",
+      "commissielid",
+      "burgerraadslid",
+      "\\bburgerlid\\b",
+      "steunfractie",
+      "\\bschepen\\b",
+      "provincieraadslid",
+      "districtsraadslid",
+      "\\bdijkgraaf\\b",
+      "\\bheemraad\\b",
+      "kamerlid",
+      "\\bduo ?raadslid\\b",
+      "burgermeister",
+      "buergermeister",
+      "beigeordnet",
+      "\\bstadtrat\\b",
+      "stadtratin",
+      "\\bgemeinderat\\b",
+      "gemeinderatin",
+      "ratsmitglied",
+      "\\bratsherr\\b",
+      "\\bratsfrau\\b",
+      "\\blandrat\\b",
+      "landratin",
+      "\\bkreisrat",
+      "ortsvorsteher",
+      "stadtverordnete",
+      "abgeordnete",
+      "\\bdezernent",
+      "bezirksvorsteher",
+      "gemeindeprasident",
+      "stadtprasident",
+      "gemeindeammann",
+      "stadtammann",
+      "regierungsrat",
+      "nationalrat",
+      "\\bmaire\\b",
+      "adjointe? au maire",
+      "maire adjointe?",
+      "\\badjointe? (a|aux|en charge|delegue|deleguee|chargee?)\\b",
+      "\\b(1er|1ere|premier|premiere|2e|2eme|deuxieme|3e|3eme) adjointe?\\b",
+      "\\bconseill?(er|ere)s? (municipal|municipale|communautaire|departemental|departementale|regional|regionale|communal|communale|metropolitain|metropolitaine|d arrondissement|delegue|deleguee)\\b",
+      "\\belue?s?\\b",
+      "\\bdeputee?\\b(?! (chief|director|head|manager|principal|clerk|registrar|chief executive))",
+      "\\bprovost\\b",
+      "\\bsenat(eur|rice)\\b",
+      "\\bechevine?\\b",
+      "\\bbourgmestre\\b",
+      "\\bpresidente? (du|de la|de l|des) ?(conseil|cpas|communaute|metropole|departement|region|agglomeration|syndicat|ccas)",
+      "\\bvice ?presidente?\\b",
+      "borgmester",
+      "\\bradmand\\b",
+      "byradsmedlem",
+      "\\bbyrad",
+      "kommunalbestyrelse",
+      "regionsradsmedlem",
+      "udvalgsformand",
+      "\\bpolitiker\\b",
+      "kommunalrad",
+      "kommunstyrelsens ordforande",
+      "\\bledamot\\b",
+      "oppositionsrad",
+      "\\bordforer\\b",
+      "varaordforer",
+      "kommunestyremedlem",
+      "bystyremedlem",
+      "pormestari",
+      "valtuutettu",
+      "\\balcalde",
+      "\\bconcejal",
+      "\\bregidor",
+      "\\bdiputad",
+      "\\bsindac",
+      "\\bassessore\\b",
+      "\\bconsigliere\\b",
+      "\\bvereador",
+      "\\bprefeito"
+    ],
+    "engagement": [
+      "engag",
+      "particip",
+      "\\bconsultations?\\b",
+      "communicati",
+      "\\bcomms\\b",
+      "kommunikati",
+      "kommunikasjon",
+      "comunicac",
+      "comunicazione",
+      "\\bpublic affairs\\b",
+      "\\bpublic relations\\b",
+      "\\bpr (manager|officer|lead|director|advisor|adviser|specialist)\\b",
+      "\\bmedia relations\\b",
+      "\\bpress (officer|office|secretary|manager)\\b",
+      "\\bspokes(person|man|woman)\\b",
+      "\\bcommunity (relations|outreach|liaison|development|involvement)\\b",
+      "\\bpublic involvement\\b",
+      "\\bcivic\\b",
+      "\\bdemocracy\\b",
+      "\\bresident (experience|voice|insight)\\b",
+      "\\boutreach\\b",
+      "\\bstakeholder",
+      "\\bcitizen (services|voice|experience)\\b",
+      "\\bneighbou?rhood (liaison|coordinator|services|officer|manager)\\b",
+      "\\bpublic input\\b",
+      "betrokkenheid",
+      "woordvoerder",
+      "omgevingsmanag",
+      "omgevingswet",
+      "wijkmanag",
+      "wijkcoordinat",
+      "wijkregisseur",
+      "gebiedsregisseur",
+      "gebiedsmanag",
+      "gebiedsmakelaar",
+      "gebiedsgericht",
+      "dorpscoordinat",
+      "kernencoordinat",
+      "democratie",
+      "inwonersinitiatie",
+      "bewonersinitiatie",
+      "burgerinitiatie",
+      "samenlevingsopbouw",
+      "beteiligung",
+      "partizipation",
+      "offentlichkeitsarbeit",
+      "pressesprecher",
+      "pressestelle",
+      "\\bpresse\\b",
+      "burgerdialog",
+      "\\bdialog",
+      "quartiersmanag",
+      "stadtteilmanag",
+      "demokratie",
+      "concertation",
+      "citoyennete",
+      "relations? (aux |avec les )?(usagers|citoyens|habitants)",
+      "\\bvie (des quartiers|associative|locale|citoyenne)\\b",
+      "\\bproximite\\b",
+      "inddragelse",
+      "medborgerskab",
+      "naerdemokrati",
+      "delaktighet",
+      "medborgardialog",
+      "medvirkning",
+      "innbyggerdialog",
+      "osallisuus",
+      "viestinta",
+      "demokrati",
+      "deltagelse",
+      "borgerdialog"
+    ],
+    "not_a_title": {
+      "_about": "Whole-title values that say nothing about the role. Treated as no title.",
+      "values": [
+        "",
+        "-",
+        "n a",
+        "na",
+        "none",
+        "nvt",
+        "n v t",
+        "geen",
+        "overig",
+        "overige",
+        "other",
+        "others",
+        "anders",
+        "autre",
+        "autres",
+        "sonstige",
+        "andet",
+        "unknown",
+        "x",
+        "xx",
+        "test",
+        "medewerker",
+        "employee",
+        "staff",
+        "mitarbeiter",
+        "mitarbeiterin",
+        "employe",
+        "employee",
+        "agent",
+        "ambtenaar",
+        "officer",
+        "worker",
+        "member",
+        "lid",
+        "contact",
+        "info",
+        "title",
+        "job title",
+        "functie",
+        "fonction",
+        "funktion",
+        "self employed",
+        "freelancer",
+        "zzp",
+        "zzp er"
+      ]
+    },
+    "private_person": {
+      "_about": "Titles that say the person is a resident, not someone who works at the organisation. Excluded: the emails are written to people who work in or for government.",
+      "patterns": [
+        "^(inwoner|bewoner|burger|resident|citizen|habitant|habitante|citoyen|citoyenne|einwohner|einwohnerin|borger|medborger|private|prive|particulier|retired|gepensioneerd|retraite|retraitee|pensionado|jubilado)$"
+      ]
+    },
+    "shared_inbox_locals": {
+      "_about": "Email local parts (before the @) that belong to a team, not a person. Matched after removing digits, dots, dashes and underscores.",
+      "values": [
+        "info",
+        "contact",
+        "contacts",
+        "gemeente",
+        "gemeentehuis",
+        "post",
+        "postbus",
+        "postmaster",
+        "mail",
+        "email",
+        "admin",
+        "administratie",
+        "administration",
+        "office",
+        "griffie",
+        "raadsgriffie",
+        "secretariaat",
+        "secretariat",
+        "receptie",
+        "reception",
+        "accueil",
+        "communicatie",
+        "communication",
+        "communications",
+        "comms",
+        "participatie",
+        "participation",
+        "engagement",
+        "press",
+        "presse",
+        "pers",
+        "media",
+        "webmaster",
+        "web",
+        "noreply",
+        "hello",
+        "hallo",
+        "bonjour",
+        "mairie",
+        "kontakt",
+        "rathaus",
+        "stadt",
+        "gemeinde",
+        "kommune",
+        "borgerservice",
+        "bestuurssecretariaat",
+        "bestuursondersteuning",
+        "college",
+        "burgemeester",
+        "mayor",
+        "council",
+        "enquiries",
+        "enquiry",
+        "inquiries",
+        "customerservice",
+        "klantcontact",
+        "publiekszaken",
+        "team",
+        "general",
+        "support",
+        "service",
+        "services",
+        "ville",
+        "cabinet",
+        "kabinet",
+        "secretaria",
+        "sekretariat",
+        "poststelle",
+        "buergerservice",
+        "burgerservice"
+      ],
+      "prefixes": [
+        "info",
+        "contact",
+        "griffie",
+        "secretariaat",
+        "gemeente"
+      ]
+    },
+    "personal_email_domains": {
+      "_about": "Consumer mailboxes. Also personal when the Lead's EmailDomain__Personal_Email_Domain__c says Yes.",
+      "exact": [
+        "gmail.com",
+        "googlemail.com",
+        "msn.com",
+        "ymail.com",
+        "icloud.com",
+        "me.com",
+        "mac.com",
+        "aol.com",
+        "web.de",
+        "t-online.de",
+        "freenet.de",
+        "mail.com",
+        "protonmail.com",
+        "proton.me",
+        "pm.me",
+        "mailfence.com",
+        "kpnmail.nl",
+        "ziggo.nl",
+        "home.nl",
+        "planet.nl",
+        "hetnet.nl",
+        "chello.nl",
+        "xs4all.nl",
+        "wxs.nl",
+        "casema.nl",
+        "telenet.be",
+        "skynet.be",
+        "proximus.be",
+        "orange.fr",
+        "wanadoo.fr",
+        "free.fr",
+        "sfr.fr",
+        "laposte.net",
+        "bbox.fr",
+        "neuf.fr",
+        "btinternet.com",
+        "sky.com",
+        "virginmedia.com",
+        "talktalk.net",
+        "comcast.net",
+        "verizon.net",
+        "att.net",
+        "sbcglobal.net",
+        "bellsouth.net",
+        "cox.net",
+        "charter.net",
+        "shaw.ca",
+        "rogers.com",
+        "sympatico.ca",
+        "videotron.ca",
+        "bigpond.com",
+        "optusnet.com.au",
+        "xtra.co.nz",
+        "libero.it",
+        "tiscali.it",
+        "virgilio.it",
+        "alice.it",
+        "o2.pl",
+        "wp.pl",
+        "onet.pl",
+        "interia.pl",
+        "seznam.cz",
+        "mail.ru",
+        "qq.com",
+        "163.com",
+        "126.com",
+        "naver.com",
+        "gmil.com",
+        "gmaiil.com",
+        "gmal.com",
+        "gamil.com",
+        "hotmial.com",
+        "outlok.com",
+        "bluewin.ch",
+        "gmx.ch",
+        "sunrise.ch",
+        "a1.net",
+        "chello.at",
+        "mail.dk",
+        "jubii.dk",
+        "tdcadsl.dk"
+      ],
+      "prefixes": [
+        "hotmail.",
+        "outlook.",
+        "live.",
+        "yahoo.",
+        "gmx.",
+        "yandex."
+      ]
+    }
+  },
+  "eligibility": {
+    "intake": {
+      "internal_domains": [
+        "govocal.com",
+        "citizenlab.co"
+      ],
+      "test_company_patterns": [
+        "^test($|\\s|nl|org|ing)"
+      ],
+      "test_company_names": [
+        "city of test",
+        "go vocal",
+        "govocal",
+        "citizenlab"
+      ],
+      "test_domain_patterns": [
+        "^test([^a-z]|$)",
+        "testing",
+        "(^|\\.)test\\."
+      ],
+      "spam_statuses": [
+        "Spam"
+      ]
+    },
+    "org_types": {
+      "_about": "Organisation type values seen in this org (Lead Organization_type__c and Company_type__c, Account Organization_Type__c, Company_Type__c and Customer_Type_L1__c). Any government value wins; otherwise a public-institution value; otherwise the first excluded value, unless the name, domain or a market file says government (then review). With no type at all, the name and domain patterns and the market files decide. An education email domain (.edu, .ac.uk, student.) is excluded first.",
+      "government": [
+        "Local government",
+        "Regional government",
+        "Regional Government",
+        "Regional or National Government",
+        "City / Municipality",
+        "Government"
+      ],
+      "public_institution": [
+        "Other public institution"
+      ],
+      "excluded": {
+        "Consultant": "consultant",
+        "Private company": "private company",
+        "Press and media": "press and media",
+        "Political party": "political party",
+        "NGO or civil society organization": "NGO",
+        "NGO or civil society": "NGO",
+        "Non-profit": "NGO",
+        "Non-Government": "not government",
+        "Education or research": "education or research",
+        "Education and research": "education or research",
+        "University, Library, & Research": "education or research",
+        "University, Library, &amp; Research": "education or research"
+      },
+      "unknown": [
+        "Other",
+        "Unknown",
+        "REP NEEDS TO FILL",
+        "N/A"
+      ],
+      "education_domain_patterns": [
+        "\\.edu$",
+        "\\.edu\\.[a-z]{2}$",
+        "\\.ac\\.[a-z]{2}$",
+        "(^|\\.)students?\\."
+      ]
+    },
+    "include_public_institutions": false,
+    "_include_public_institutions": "Other public institutions (health, housing, agencies, museums) are gov-adjacent (rulebook T3). Off by default because the emails talk about municipalities; switch on to give them keys (size is usually unknown, so they get the Octopus email).",
+    "elected_title_overrides_org_type": true,
+    "_elected_title_overrides_org_type": "A councillor who fills in the form with their day job's company or their party is still a councillor (rulebook 3: tier by the mandate).",
+    "government_name_patterns": [
+      "\\bgemeente\\b",
+      "\\bgemeentebestuur\\b",
+      "\\bstad\\b",
+      "\\bstadsbestuur\\b",
+      "\\bocmw\\b",
+      "\\bprovincie\\b",
+      "\\blokaal bestuur\\b",
+      "\\bwaterschap\\b",
+      "\\bhoogheemraadschap\\b",
+      "\\bmunicipality\\b",
+      "\\bmunicipal\\b",
+      "\\bcity of\\b",
+      "\\bcity council\\b",
+      "\\bcity commission\\b",
+      "\\btown of\\b",
+      "\\btown council\\b",
+      "\\bvillage of\\b",
+      "\\bborough\\b",
+      "\\btownship\\b",
+      "\\bcounty\\b",
+      "\\bcouncil\\b",
+      "\\bparish\\b",
+      "\\bcombined authority\\b",
+      "\\bstrategic authority\\b",
+      "\\bgovernment\\b",
+      "\\bministry\\b",
+      "\\bministerie\\b",
+      "\\bcommune\\b",
+      "\\bcommunaute (de communes|d agglomeration|urbaine)\\b",
+      "\\bmetropole\\b",
+      "\\bmairie\\b",
+      "\\bville de\\b",
+      "\\bville d\\b",
+      "\\bconseil (departemental|regional|municipal)\\b",
+      "\\bdepartement\\b",
+      "^region\\b",
+      "\\bcpas\\b",
+      "\\bsyndicat (mixte|intercommunal)\\b",
+      "\\badministration communale\\b",
+      "\\bstadt\\b",
+      "\\bgemeinde\\b",
+      "\\blandkreis\\b",
+      "\\bkreis\\b",
+      "\\bbezirk",
+      "\\blandratsamt\\b",
+      "\\bmagistrat\\b",
+      "\\bkanton\\b",
+      "\\bkommune\\b",
+      "\\bkommunen\\b",
+      "\\bkommuneqarfik\\b",
+      "\\bkommun\\b",
+      "\\bkunta\\b",
+      "\\bkaupunki\\b",
+      "\\bregionen\\b",
+      "\\bayuntamiento\\b",
+      "\\bmunicipalidad\\b",
+      "\\balcaldia\\b",
+      "\\bmunicipio\\b",
+      "\\bcomune\\b",
+      "\\bprefeitura\\b",
+      "\\bcamara municipal\\b",
+      "\\bintendencia\\b",
+      "\\bgobierno\\b",
+      "\\bgouvernement\\b",
+      "\\bregierung\\b"
+    ],
+    "government_domain_patterns": [
+      "\\.gov$",
+      "\\.gov\\.[a-z]{2,3}$",
+      "\\.[a-z]{2,3}\\.gov\\.[a-z]{2}$",
+      "\\.gouv\\.fr$",
+      "\\.gv\\.at$",
+      "\\.gc\\.ca$",
+      "\\.govt\\.nz$",
+      "\\.gob\\.[a-z]{2}$",
+      "\\.[a-z]{2}\\.us$",
+      "(^|\\.)gemeente",
+      "(^|\\.)ville-",
+      "(^|\\.)mairie-",
+      "(^|\\.)stadt-",
+      "(^|\\.)kommune\\.",
+      "(^|\\.)cityof",
+      "(^|\\.)townof",
+      "(^|\\.)villageof",
+      "(^|\\.)countyof"
+    ],
+    "no_organisation_companies": {
+      "_about": "Company values that name no organisation. With a personal email address and nothing else, the lead has no organisation we can see, so no key.",
+      "values": [
+        "google",
+        "[[unknown]]",
+        "unknown",
+        "unknown (vocal point signup)",
+        "n/a",
+        "na",
+        "none",
+        "aucune",
+        "aucun",
+        "no tengo",
+        "independiente",
+        "independent",
+        "self employed",
+        "self-employed",
+        "freelancer",
+        "freelance",
+        "prive",
+        "privé",
+        "private",
+        "particulier",
+        "x",
+        "-",
+        ".",
+        "test",
+        "overheid",
+        "gemeente",
+        "municipality",
+        "city",
+        "council",
+        "ngo",
+        "student",
+        "geen",
+        "nvt",
+        "n.v.t.",
+        "home",
+        "personal",
+        "me",
+        "myself",
+        "privé (gepensioneerd)",
+        "prive (gepensioneerd)"
+      ]
+    },
+    "relationships": {
+      "_about": "Rulebook 5.2 and 5.4: clients, open deals, churned and closed-lost accounts, and partners never enter automated nurture. Read only from a matched account the run trusts.",
+      "client": true,
+      "open_opportunity": true,
+      "churned": true,
+      "closed_lost": true,
+      "partner": true
+    },
+    "run": {
+      "window_days": 14,
+      "write_field": "Persona_Key__c",
+      "max_api_writes_per_run": 50,
+      "stop_after_consecutive_errors": 2
+    }
+  }
+}

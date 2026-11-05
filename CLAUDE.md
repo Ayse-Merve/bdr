@@ -1,8 +1,9 @@
 # bdr: Amy's reply handler
 
-This repo answers people who reply to Go Vocal's persona reachout emails (sender **Amy | Go Vocal, amy@govocal.com**) and records the outcome in Salesforce. Pardot sends the first emails; this repo only handles what comes back.
+This repo runs Go Vocal's persona reachout (sender **Amy | Go Vocal, amy@govocal.com**):
 
-To run it, follow `.claude/skills/process-replies/SKILL.md` step by step.
+- **New batch** of leads → persona keys + a Pardot import CSV with each lead's message: `.claude/skills/new-batch/SKILL.md`. It only reads Salesforce and writes files; it never writes to Salesforce or Pardot. The import CSV holds names and emails: keep it in `out/` (git-ignored), never commit it.
+- **Replies** to the sent emails, every weekday at 09:00: `.claude/skills/process-replies/SKILL.md`. The guardrails below are for this part.
 
 ## Guardrails (always)
 
