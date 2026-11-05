@@ -33,8 +33,9 @@ def main(argv=None):
         w.add_argument(a)
     u = sub.add_parser("undo"); u.add_argument("run_id")
     b = sub.add_parser("batch", help="plan + lead JSON -> Pardot import CSV with persona key and message")
-    b.add_argument("--plan", required=True)
-    b.add_argument("--leads", nargs="+", required=True)
+    b.add_argument("--plan")
+    b.add_argument("--leads", nargs="+")
+    b.add_argument("--keyed-csv", help="a list that already has persona keys: skip classification")
     b.add_argument("--out", required=True)
     a = p.parse_args(argv)
 
@@ -54,7 +55,7 @@ def main(argv=None):
         ledger.log_write(a.run_id, a.object, a.record_id, a.field, a.old, a.new); out = {"ok": True}
     elif a.cmd == "batch":
         from . import batch
-        out = batch.build(a.plan, a.leads, a.out)
+        out = batch.from_keyed_csv(a.keyed_csv, a.out) if a.keyed_csv else batch.build(a.plan, a.leads, a.out)
     else:
         out = ledger.undo_list(a.run_id)
     json.dump(out, sys.stdout, ensure_ascii=False, indent=2)

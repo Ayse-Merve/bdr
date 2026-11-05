@@ -59,6 +59,47 @@ def pick(messages, key, org_country):
     return m.get("language") or "", m["subject"], m["body"]
 
 
+COUNTRY_DK = {"denmark", "danmark", "dk", "greenland", "grønland", "kalaallit nunaat", "gl"}
+
+
+def _col(row, *names):
+    low = {k.strip().lower(): v for k, v in row.items() if k}
+    for n in names:
+        v = low.get(n.lower())
+        if v not in (None, ""):
+            return v.strip()
+    return ""
+
+
+def from_keyed_csv(csv_path, out_dir, messages_path=None):
+    """A list that already has persona keys (e.g. from Pardot): only add subject + message.
+    Needs Email and a persona key column; uses First/Last Name, Country, Lead ID if present."""
+    import re as _re
+    rows = list(csv.DictReader(Path(csv_path).open(encoding="utf-8-sig")))
+    plan, leads = {"rows": []}, []
+    for i, r in enumerate(rows):
+        email = _col(r, "Email", "Email Address")
+        key = _col(r, "Persona Key", "Persona_Key__c", "Persona key", "PersonaKey")
+        lid = _col(r, "Salesforce Lead ID", "CRM Lead FID", "Lead ID", "Id") or f"row-{i + 2}"
+        country = _col(r, "Country")
+        domain = email.rsplit("@", 1)[-1].lower() if "@" in email else ""
+        dk = country.lower() in COUNTRY_DK or (not country and domain.rsplit(".", 1)[-1] in ("dk", "gl"))
+        if not email:
+            plan["rows"].append({"id": lid, "status": "excluded", "excluded_reason": "no email address"})
+        elif not _re.match(r"^(NAM|UKI|NL|BE|FR|DACH|NORDICS)-((ENG|DIR|POL)-(S|O|W)|GEN)$", key):
+            plan["rows"].append({"id": lid, "status": "excluded",
+                                 "excluded_reason": f"no valid persona key ({key!r})" if key else "no persona key"})
+        else:
+            plan["rows"].append({"id": lid, "status": "keyed", "key": key, "org_country": "DK" if dk else None})
+        leads.append({"Id": lid, "Email": email, "FirstName": _col(r, "First Name", "FirstName"),
+                      "LastName": _col(r, "Last Name", "LastName"), "Company": _col(r, "Company"), "Country": country})
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "_plan.json").write_text(json.dumps(plan), encoding="utf-8")
+    (out / "_leads.json").write_text(json.dumps(leads, ensure_ascii=False), encoding="utf-8")
+    return build(out / "_plan.json", [out / "_leads.json"], out, messages_path)
+
+
 def build(plan_path, lead_paths, out_dir, messages_path=None):
     messages = json.loads(Path(messages_path or ROOT / "messages/messages.json").read_text(encoding="utf-8"))["messages"]
     plan = json.loads(Path(plan_path).read_text(encoding="utf-8"))

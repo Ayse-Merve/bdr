@@ -41,3 +41,18 @@ def test_build(tmp_path):
     assert by["L3"]["Nurture track message"].startswith("Guten Tag Jonas Becker,")
     assert "{{" not in "".join(r["Nurture track message"] + r["Nurture track subject"] for r in rows)
     assert by["L1"]["Nurture track message (HTML)"].startswith("<p>Hej Mette,</p>")
+
+
+def test_keyed_csv(tmp_path):
+    src = tmp_path / "list.csv"
+    src.write_text("Email,First Name,Last Name,Country,Persona Key,CRM Lead FID\n"
+                   "m@kommune.dk,Mette,Hansen,Denmark,NORDICS-GEN,00QA\n"
+                   "e@x.se,Erik,Lund,Sweden,NORDICS-GEN,00QB\n"
+                   "a@b.nl,Anna,,Netherlands,NL-ENG-O,00QC\n"
+                   "x@y.com,X,Y,,,00QD\n", encoding="utf-8")
+    s = batch.from_keyed_csv(src, tmp_path / "out")
+    assert s["keyed"] == 3 and s["no_key"] == 1 and s["by_language"]["Danish"] == 1
+    rows = {r["Salesforce Lead ID"]: r for r in csv.DictReader((tmp_path / "out/pardot-import.csv").open(encoding="utf-8-sig"))}
+    assert rows["00QA"]["Nurture track message"].startswith("Hej Mette,")
+    assert rows["00QB"]["Nurture track message"].startswith("Hi Erik,")
+    assert rows["00QC"]["Nurture track message"].startswith("Dag Anna,")

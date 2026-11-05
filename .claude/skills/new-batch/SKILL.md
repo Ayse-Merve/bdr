@@ -9,6 +9,16 @@ Ayse uploads a leads file (CSV or Excel) in the chat. The output is a CSV she im
 
 Batch name: `<YYYY-MM-DD>-<short name Ayse gives, or the file name>`. Scratch: `/tmp/batch/<batch>/`. Output: `out/<batch>/` (not committed; it holds names and emails).
 
+## 0. List already has persona keys?
+
+If Ayse's file already has a persona key column (e.g. exported from Pardot), skip steps 2-3:
+
+```
+PYTHONPATH=src python3 -m bdr batch --keyed-csv <file.csv> --out out/<batch>
+```
+
+It needs Email and the key; it uses First/Last Name, Country and Lead ID (`CRM Lead FID`) if present. Before running, drop rows Pardot can't email (`Opted Out` = 1 or `Do Not Email` = 1) and report how many. Then go to step 4's spot-check and step 5.
+
 ## 1. Read the file
 
 Find the **Lead ID** column (15 or 18 chars, starts with `00Q`). If there is none, use **Email**. Drop blanks and duplicates. Report the row count, and how many have neither.
