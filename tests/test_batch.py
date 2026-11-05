@@ -56,3 +56,12 @@ def test_keyed_csv(tmp_path):
     assert rows["00QA"]["Nurture track message"].startswith("Hej Mette,")
     assert rows["00QB"]["Nurture track message"].startswith("Hi Erik,")
     assert rows["00QC"]["Nurture track message"].startswith("Dag Anna,")
+
+
+def test_clean_names_edge_cases():
+    assert batch.clean_names("RobertTuppy", "RobertTuppy") == ("RobertTuppy", "")
+    assert batch.clean_names("robin", "smith") == ("Robin", "Smith")
+    assert batch.clean_names("617050883", "x@gmail.com") == ("", "")
+    assert batch.clean_names("Name field1", "Surname field1") == ("", "")
+    assert batch.clean_names("Frau", "Klinkhammer") == ("Frau", "Klinkhammer")
+    assert batch.clean_names("anne-marie", "") == ("Anne-Marie", "")

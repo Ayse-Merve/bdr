@@ -28,12 +28,25 @@ def _records(paths):
 
 
 def clean_name(n):
-    n = (n or "").strip()
+    """A name we can put in a greeting, or '' when it isn't one."""
+    n = re.sub(r"\s+", " ", (n or "").strip())
     if not n or "?" in n or "\ufffd" in n:  # broken encoding: better no name than "J?r?me"
         return ""
-    if n.isupper() and len(n) > 2:
-        n = n.title()
+    if re.search(r"[@0-9,;:/\\()]", n) or len(n) > 30 or re.search(r"\b(field|name|surname|test)\d*\b", n, re.I):
+        return ""  # an email, a number, a sentence or a form placeholder
+    if n.isupper() and len(n) > 2 or n.islower():
+        n = " ".join(w[:1].upper() + w[1:] for w in n.lower().split(" "))
+        n = "-".join(w[:1].upper() + w[1:] for w in n.split("-"))
     return n
+
+
+def clean_names(first, last):
+    f, l = clean_name(first), clean_name(last)
+    if f and l and f.lower() == l.lower():
+        l = ""  # same value typed in both fields
+    if not f and l and not clean_name(first) and (first or "").strip():
+        l = ""  # first name was junk: don't greet by surname alone
+    return f, l
 
 
 def render(text, first, last):
@@ -115,7 +128,7 @@ def build(plan_path, lead_paths, out_dir, messages_path=None):
             nokey.append({"Lead ID": row["id"], "Email": rec.get("Email"), "Company": rec.get("Company"),
                           "Status": row["status"], "Reason": reason})
             continue
-        first, last = clean_name(rec.get("FirstName")), clean_name(rec.get("LastName"))
+        first, last = clean_names(rec.get("FirstName"), rec.get("LastName"))
         lang, subject, body = pick(messages, row["key"], row.get("org_country"))
         body = render(body, first, last)
         keyed.append({"Email": rec.get("Email"), "First Name": first, "Last Name": last,
