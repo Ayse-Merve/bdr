@@ -6,10 +6,9 @@ description: Process new replies to Amy's persona reachout emails - classify eac
 # Process replies
 
 Read `CLAUDE.md` first; its guardrails apply to every step. Tools (load with ToolSearch if deferred):
-- **Gmail connector** (`mcp__Gmail__*`, account ayse@govocal.com): `search_threads`, `get_thread`, `get_message`, `create_draft` (with `replyToMessageId`), `reply`, `forward`, `label_thread` / `label_message`, `list_labels`, `create_label`.
+- **Gmail connector** (`mcp__Gmail__*`, account ayse@govocal.com): **read and label only**: `search_threads`, `get_thread`, `get_message`, `get_draft`, `delete_draft`, `label_thread`, `list_labels`. **Never send, reply, forward or draft with it**: it rewrites every link into a google.com/url redirect.
+- **Zapier, Gmail app** (Ayse's own Zapier account, Gmail connection ayse@govocal.com): **all outgoing email**: "Reply to Email" for Amy's replies (keeps the thread), "Send Email" for rep forwards. Always set From = amy@govocal.com (the send-as alias) and From Name = "Amy Arcalode", body type plain text. Use `inspect_zapier_actions` for exact action keys and parameters.
 - **Salesforce Admin connector** (`mcp__Salesforce_Admin__*`): `soqlQuery` to read, `updateSobjectRecord` / `createSobjectRecord` to write. Never use its delete tools.
-
-The Gmail tools have no From field. Replies to mail sent to amy@ must go out **from amy@govocal.com**: before the first live run, check one test draft's From. If it shows ayse@, stop and report it instead of creating replies.
 
 ## 0. Start
 
@@ -18,7 +17,7 @@ Scheduled: once every weekday at 09:00 (Europe/Berlin). Monday's run also covers
 - `run_id` = current UTC time as `YYYYMMDD-HHMM`.
 - Read `config/campaign.json` (mode, labels, campaign id) and note the mode in your summary.
 - Work from the repo root; run the CLI as `PYTHONPATH=src python3 -m bdr …`.
-- **Sender check (every run, before anything is sent):** `create_draft` to ayse@govocal.com with subject `bdr sender check <run_id>`, read it with `get_draft` (METADATA_ONLY), then `delete_draft`. The connector sends from Gmail's *default* "Send mail as" address, which must be amy@govocal.com. If the sender is anything else, treat this run as `draft` mode (create drafts, label them `Needs review`) and put "Default sender is not amy@ - change it in Gmail Settings → Accounts → Send mail as" at the top of the summary.
+- **Send check (every run, before anything is sent):** with Zapier Gmail "Create Draft", draft an email to ayse@govocal.com, From amy@govocal.com, subject `bdr send check <run_id>`, body = one booking link from `config/reps.json` (any rep). Find it with the Gmail connector (`get_draft`, format RAW), confirm **From is amy@govocal.com** and **the link is exactly as written (no google.com/url)**, then `delete_draft`. If either fails, or Zapier isn't available, send nothing this run: do the Salesforce writes, label replies that needed an answer `Needs review`, and start the summary with what failed.
 
 ## 1. Collect new replies
 
@@ -75,8 +74,8 @@ If a write fails, stop processing that message, label it `Needs review`, and rep
 
 ## 6. Gmail
 
-- `plan.gmail.reply` → **draft mode:** create a draft reply in the same thread, From amy@govocal.com, To the sender, CC the rep, body from the plan. **send mode:** send it.
-- `plan.gmail.forward` → same, To the rep, Reply-To the prospect.
+- `plan.gmail.reply` → Zapier Gmail **"Reply to Email"** on the prospect's message (same thread), From amy@govocal.com, To the sender, CC the rep, body from the plan as plain text, links exactly as given. **draft mode:** Zapier "Create Draft" instead.
+- `plan.gmail.forward` → Zapier Gmail **"Send Email"**, From amy@govocal.com, To the rep, Reply-To the prospect, body from the plan.
 - If `plan.blocked` is set, skip reply/forward and list it in the summary.
 - Add the labels in `plan.gmail.labels_add`.
 - `python -m bdr mark <message_id> <sender> <category> <run_id>`
