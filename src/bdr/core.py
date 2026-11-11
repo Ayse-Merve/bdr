@@ -10,14 +10,18 @@ ROOT = Path(__file__).resolve().parents[2]
 CONFIG = ROOT / "config"
 TEMPLATES = ROOT / "templates"
 
-SUPPORTED_LANGS = ["en-US", "en-GB", "fr", "nl", "nl-BE", "de", "da"]
+SUPPORTED_LANGS = ["en-US", "en-GB", "fr", "nl", "nl-BE", "de", "da", "es", "it"]
 MARKET_LANG = {"NAM": "en-US", "UKI": "en-GB", "NL": "nl", "BE": "nl-BE",
-               "FR": "fr", "DACH": "de", "NORDICS": "en-GB"}
+               "FR": "fr", "DACH": "de", "NORDICS": "en-GB", "ES": "es", "IT": "it"}
 CAMPAIGN_ORDER = ["Sent", "Responded", "Meeting Booked"]
 COUNTRY_LANG = {"netherlands": "nl", "the netherlands": "nl", "belgium": "nl-BE", "france": "fr",
                 "germany": "de", "austria": "de", "switzerland": "de", "liechtenstein": "de",
                 "united kingdom": "en-GB", "ireland": "en-GB", "denmark": "da", "greenland": "da",
-                "united states": "en-US", "usa": "en-US"}
+                "united states": "en-US", "usa": "en-US", "italy": "it", "san marino": "it",
+                "spain": "es", "mexico": "es", "chile": "es", "argentina": "es", "colombia": "es", "peru": "es",
+                "ecuador": "es", "bolivia": "es", "uruguay": "es", "paraguay": "es", "venezuela": "es",
+                "guatemala": "es", "honduras": "es", "el salvador": "es", "nicaragua": "es", "costa rica": "es",
+                "panama": "es", "cuba": "es", "dominican republic": "es", "puerto rico": "es"}
 
 
 def load(name):

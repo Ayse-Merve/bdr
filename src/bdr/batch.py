@@ -99,7 +99,7 @@ def from_keyed_csv(csv_path, out_dir, messages_path=None):
         dk = country.lower() in COUNTRY_DK or (not country and domain.rsplit(".", 1)[-1] in ("dk", "gl"))
         if not email:
             plan["rows"].append({"id": lid, "status": "excluded", "excluded_reason": "no email address"})
-        elif not _re.match(r"^(NAM|UKI|NL|BE|FR|DACH|NORDICS)-((ENG|DIR|POL)-(S|O|W)|GEN)$", key):
+        elif not _re.match(r"^(NAM|UKI|NL|BE|FR|DACH|NORDICS|ES|IT)-((ENG|DIR|POL)-(S|O|W)|GEN)$", key):
             plan["rows"].append({"id": lid, "status": "excluded",
                                  "excluded_reason": f"no valid persona key ({key!r})" if key else "no persona key"})
         else:

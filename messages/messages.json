@@ -490,6 +490,146 @@
      "body": "Hej {{Recipient.FirstName}},\n\nHybrid borgerinddragelse er blevet en forventning. At gøre det godt på tværs af flere projekter med ét lille team er dér, hvor det ofte går galt.\n\nLejre (29.600 indbyggere) fik hver syvende borger til at deltage i en hybrid proces, som man kunne være med i hvor som helst og når som helst, understøttet af AI-analyse.\n\nKunne et kort opkald inden for de næste par uger være nyttigt? Svar blot på denne mail, så finder vi et tidspunkt."
     }
    }
+  },
+  "ES-ENG-S": {
+   "language": "Spanish, usted",
+   "subject": "Participación ciudadana con un equipo pequeño",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn muchas ciudades y municipios pequeños, se pide a un equipo reducido que saque adelante un plan general o un debate sobre seguridad con las mismas tres personas de siempre y una audiencia pública a la que acuden doce vecinos.\n\nSi lleva esto adelante prácticamente sin apoyo, las herramientas tienen que ahorrarle tiempo.\n\nStruthers, Ohio (10.000 habitantes) elaboró su primer plan general acudiendo directamente a los vecinos, y se propuso llegar tanto a los más jóvenes como a las personas mayores.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-ENG-S"
+  },
+  "ES-ENG-O": {
+   "language": "Spanish, usted",
+   "subject": "Explicar lo que dijeron los vecinos",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn muchas ciudades de su tamaño, cada departamento elige su propia herramienta de participación. A los vecinos se les encuesta una y otra vez, y cada proyecto sigue un criterio distinto. Nadie lo planificó así; simplemente fue sucediendo.\n\nEs usted quien tiene que hacer que el proceso funcione y después explicar los resultados, normalmente a personas que no estuvieron presentes.\n\nLancaster, Pensilvania (57.000 habitantes) combinó la participación en línea y presencial para que su diversa población estuviera bien representada, en temas que iban desde la labor policial hasta la planificación de la movilidad.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-ENG-O"
+  },
+  "ES-ENG-W": {
+   "language": "Spanish, usted",
+   "subject": "Lo bastante representativo para actuar",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn las grandes ciudades y regiones, suelen ser las mismas pocas voces las que dominan. A los responsables les cuesta saber si lo que han escuchado es lo bastante representativo como para actuar.\n\nEs en eso en lo que se le evalúa, más que en el número de respuestas recibidas.\n\nSt. Louis, Misuri (318.172 habitantes) implicó a más de 16.000 vecinos en la decisión sobre cómo repartir un fondo de 250 millones de dólares procedente de un acuerdo judicial, con los vecinos en el proceso desde el principio.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-ENG-W"
+  },
+  "ES-DIR-S": {
+   "language": "Spanish, usted",
+   "subject": "Participación sin otro sistema que gestionar",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn muchas ciudades y municipios pequeños, se pide a un equipo reducido que saque adelante un plan general o un debate sobre seguridad con las mismas tres personas de siempre y una audiencia pública a la que acuden doce vecinos.\n\nCon un equipo de este tamaño, cualquier sistema que necesite un administrador dedicado no sobrevivirá a su primer trimestre con mucho trabajo.\n\nStruthers, Ohio (10.000 habitantes) elaboró su primer plan general acudiendo directamente a los vecinos, y se propuso llegar tanto a los más jóvenes como a las personas mayores.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-DIR-S"
+  },
+  "ES-DIR-O": {
+   "language": "Spanish, usted",
+   "subject": "Un mismo criterio en todos los departamentos",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn muchas ciudades de su tamaño, cada departamento elige su propia herramienta de participación. A los vecinos se les encuesta una y otra vez, y cada proyecto sigue un criterio distinto. Nadie lo planificó así; simplemente fue sucediendo.\n\nUn único sistema para todos los departamentos significa menos trabajo duplicado y un solo lugar donde consultar qué dijeron realmente los vecinos.\n\nLancaster, Pensilvania (57.000 habitantes) combinó la participación en línea y presencial para que su diversa población estuviera bien representada, en temas que iban desde la labor policial hasta la planificación de la movilidad.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-DIR-O"
+  },
+  "ES-DIR-W": {
+   "language": "Spanish, usted",
+   "subject": "El mismo criterio, lo lleve quien lo lleve",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn las grandes ciudades y regiones, suelen ser las mismas pocas voces las que dominan. A los responsables les cuesta saber si lo que han escuchado es lo bastante representativo como para actuar.\n\nA su escala, lo valioso es la coherencia: el mismo criterio y los mismos informes, sea cual sea el departamento que lleve el proyecto.\n\nSt. Louis, Misuri (318.172 habitantes) implicó a más de 16.000 vecinos en la decisión sobre cómo repartir un fondo de 250 millones de dólares procedente de un acuerdo judicial, con los vecinos en el proceso desde el principio.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-DIR-W"
+  },
+  "ES-POL-S": {
+   "language": "Spanish, usted",
+   "subject": "Mostrar a los vecinos que su opinión contó",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn muchas ciudades y municipios pequeños, se pide a un equipo reducido que saque adelante un plan general o un debate sobre seguridad con las mismas tres personas de siempre y una audiencia pública a la que acuden doce vecinos.\n\nEn un lugar de este tamaño, los vecinos notan enseguida si su opinión ha servido para algo, y usted también.\n\nStruthers, Ohio (10.000 habitantes) elaboró su primer plan general acudiendo directamente a los vecinos, y se propuso llegar tanto a los más jóvenes como a las personas mayores.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-POL-S"
+  },
+  "ES-POL-O": {
+   "language": "Spanish, usted",
+   "subject": "Mostrar a los vecinos qué ha cambiado",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn muchas ciudades de su tamaño, cada departamento elige su propia herramienta de participación. A los vecinos se les encuesta una y otra vez, y cada proyecto sigue un criterio distinto. Nadie lo planificó así; simplemente fue sucediendo.\n\nLos vecinos siguen participando cuando ven qué ha cambiado gracias a lo que dijeron, y eso es algo que usted puede mostrar.\n\nLancaster, Pensilvania (57.000 habitantes) combinó la participación en línea y presencial para que su diversa población estuviera bien representada, en temas que iban desde la labor policial hasta la planificación de la movilidad.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-POL-O"
+  },
+  "ES-POL-W": {
+   "language": "Spanish, usted",
+   "subject": "A quién se escuchó y qué cambió",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn las grandes ciudades y regiones, suelen ser las mismas pocas voces las que dominan. A los responsables les cuesta saber si lo que han escuchado es lo bastante representativo como para actuar.\n\nA esta escala, lo que cuenta es la legitimidad: las decisiones se aceptan mejor cuando puede mostrar a quién se escuchó y qué cambió gracias a ello.\n\nSt. Louis, Misuri (318.172 habitantes) implicó a más de 16.000 vecinos en la decisión sobre cómo repartir un fondo de 250 millones de dólares procedente de un acuerdo judicial, con los vecinos en el proceso desde el principio.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-POL-W"
+  },
+  "ES-GEN": {
+   "language": "Spanish, usted",
+   "subject": "Participación entre departamentos",
+   "body": "Hola {{Recipient.FirstName}},\n\nEn muchas ciudades de su tamaño, cada departamento elige su propia herramienta de participación. A los vecinos se les encuesta una y otra vez, y cada proyecto sigue un criterio distinto. Nadie lo planificó así; simplemente fue sucediendo.\n\nLancaster, Pensilvania (57.000 habitantes) combinó la participación en línea y presencial para que su diversa población estuviera bien representada, en temas que iban desde la labor policial hasta la planificación de la movilidad.\n\n¿Le resultaría útil una llamada de 20 minutos en las próximas dos semanas? Basta con responder a este correo y buscamos un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-GEN"
+  },
+  "IT-ENG-S": {
+   "language": "Italian, lei",
+   "subject": "Partecipazione con un team piccolo",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nIn molti comuni piccoli, a un team ridotto viene chiesto di portare avanti un piano regolatore generale o un confronto sulla sicurezza con le stesse tre persone di sempre e un'assemblea pubblica a cui partecipano dodici cittadini.\n\nSe gestisce tutto questo quasi senza supporto, gli strumenti devono farle risparmiare tempo.\n\nStruthers, Ohio (10.000 abitanti) ha costruito il suo primo piano regolatore generale coinvolgendo direttamente i cittadini, con l'impegno di raggiungere sia i più giovani sia gli anziani.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-ENG-S"
+  },
+  "IT-ENG-O": {
+   "language": "Italian, lei",
+   "subject": "Spiegare cosa hanno detto i cittadini",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nIn molti comuni delle vostre dimensioni, ogni ufficio sceglie il proprio strumento di partecipazione. I cittadini vengono interpellati più e più volte, e ogni progetto segue uno standard diverso. Nessuno l'ha deciso, è semplicemente successo.\n\nÈ lei che deve far funzionare il processo e poi spiegarne i risultati, di solito a persone che non erano presenti.\n\nLancaster, Pennsylvania (57.000 abitanti) ha combinato partecipazione online e in presenza perché la sua popolazione, molto varia, fosse ben rappresentata, su temi che vanno dalla sicurezza alla pianificazione della mobilità.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-ENG-O"
+  },
+  "IT-ENG-W": {
+   "language": "Italian, lei",
+   "subject": "Abbastanza rappresentativo per decidere",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nNelle grandi città e negli enti di area vasta, a dominare sono spesso le stesse poche voci. Per chi guida l'ente diventa difficile capire se ciò che ha ascoltato sia abbastanza rappresentativo per decidere.\n\nÈ su questo che viene valutato il suo lavoro, più che sul numero di risposte raccolte.\n\nSt. Louis, Missouri (318.172 abitanti) ha coinvolto oltre 16.000 cittadini nella decisione su come ripartire un fondo di 250 milioni di dollari derivante da un accordo transattivo, con i cittadini nel processo fin dall'inizio.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-ENG-W"
+  },
+  "IT-DIR-S": {
+   "language": "Italian, lei",
+   "subject": "Partecipazione senza un altro sistema da gestire",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nIn molti comuni piccoli, a un team ridotto viene chiesto di portare avanti un piano regolatore generale o un confronto sulla sicurezza con le stesse tre persone di sempre e un'assemblea pubblica a cui partecipano dodici cittadini.\n\nCon un team di queste dimensioni, qualsiasi strumento che richieda un amministratore dedicato non supera il primo trimestre impegnativo.\n\nStruthers, Ohio (10.000 abitanti) ha costruito il suo primo piano regolatore generale coinvolgendo direttamente i cittadini, con l'impegno di raggiungere sia i più giovani sia gli anziani.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-DIR-S"
+  },
+  "IT-DIR-O": {
+   "language": "Italian, lei",
+   "subject": "Un unico standard per tutti gli uffici",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nIn molti comuni delle vostre dimensioni, ogni ufficio sceglie il proprio strumento di partecipazione. I cittadini vengono interpellati più e più volte, e ogni progetto segue uno standard diverso. Nessuno l'ha deciso, è semplicemente successo.\n\nUn unico sistema per tutti gli uffici significa meno lavoro duplicato e un solo posto dove guardare quando qualcuno chiede cosa hanno detto davvero i cittadini.\n\nLancaster, Pennsylvania (57.000 abitanti) ha combinato partecipazione online e in presenza perché la sua popolazione, molto varia, fosse ben rappresentata, su temi che vanno dalla sicurezza alla pianificazione della mobilità.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-DIR-O"
+  },
+  "IT-DIR-W": {
+   "language": "Italian, lei",
+   "subject": "Stesso standard, qualunque ufficio lo gestisca",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nNelle grandi città e negli enti di area vasta, a dominare sono spesso le stesse poche voci. Per chi guida l'ente diventa difficile capire se ciò che ha ascoltato sia abbastanza rappresentativo per decidere.\n\nAlla vostra scala il valore sta nella coerenza: stesso standard, stessa rendicontazione, qualunque sia l'ufficio che gestisce il progetto.\n\nSt. Louis, Missouri (318.172 abitanti) ha coinvolto oltre 16.000 cittadini nella decisione su come ripartire un fondo di 250 milioni di dollari derivante da un accordo transattivo, con i cittadini nel processo fin dall'inizio.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-DIR-W"
+  },
+  "IT-POL-S": {
+   "language": "Italian, lei",
+   "subject": "Mostrare ai cittadini che il loro contributo conta",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nIn molti comuni piccoli, a un team ridotto viene chiesto di portare avanti un piano regolatore generale o un confronto sulla sicurezza con le stesse tre persone di sempre e un'assemblea pubblica a cui partecipano dodici cittadini.\n\nIn un comune di queste dimensioni i cittadini si accorgono subito se il loro contributo ha portato a qualcosa, e anche lei.\n\nStruthers, Ohio (10.000 abitanti) ha costruito il suo primo piano regolatore generale coinvolgendo direttamente i cittadini, con l'impegno di raggiungere sia i più giovani sia gli anziani.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-POL-S"
+  },
+  "IT-POL-O": {
+   "language": "Italian, lei",
+   "subject": "Mostrare ai cittadini cosa è cambiato",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nIn molti comuni delle vostre dimensioni, ogni ufficio sceglie il proprio strumento di partecipazione. I cittadini vengono interpellati più e più volte, e ogni progetto segue uno standard diverso. Nessuno l'ha deciso, è semplicemente successo.\n\nI cittadini restano coinvolti quando vedono cosa è cambiato grazie a ciò che hanno detto, ed è qualcosa che lei può mostrare.\n\nLancaster, Pennsylvania (57.000 abitanti) ha combinato partecipazione online e in presenza perché la sua popolazione, molto varia, fosse ben rappresentata, su temi che vanno dalla sicurezza alla pianificazione della mobilità.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-POL-O"
+  },
+  "IT-POL-W": {
+   "language": "Italian, lei",
+   "subject": "Chi è stato ascoltato e cosa è cambiato",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nNelle grandi città e negli enti di area vasta, a dominare sono spesso le stesse poche voci. Per chi guida l'ente diventa difficile capire se ciò che ha ascoltato sia abbastanza rappresentativo per decidere.\n\nA questa scala conta la legittimità: le decisioni vengono accolte meglio quando può mostrare chi è stato ascoltato e cosa è cambiato.\n\nSt. Louis, Missouri (318.172 abitanti) ha coinvolto oltre 16.000 cittadini nella decisione su come ripartire un fondo di 250 milioni di dollari derivante da un accordo transattivo, con i cittadini nel processo fin dall'inizio.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-POL-W"
+  },
+  "IT-GEN": {
+   "language": "Italian, lei",
+   "subject": "Partecipazione tra gli uffici",
+   "body": "Buongiorno {{Recipient.FirstName}},\n\nIn molti comuni delle vostre dimensioni, ogni ufficio sceglie il proprio strumento di partecipazione. I cittadini vengono interpellati più e più volte, e ogni progetto segue uno standard diverso. Nessuno l'ha deciso, è semplicemente successo.\n\nLancaster, Pennsylvania (57.000 abitanti) ha combinato partecipazione online e in presenza perché la sua popolazione, molto varia, fosse ben rappresentata, su temi che vanno dalla sicurezza alla pianificazione della mobilità.\n\nLe sarebbe utile una telefonata di 20 minuti nelle prossime due settimane? Basta rispondere a questa email e troviamo un momento.",
+   "status": "DRAFT",
+   "translated_from": "NAM-GEN"
   }
  }
 }

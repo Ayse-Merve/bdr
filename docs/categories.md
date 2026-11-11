@@ -19,7 +19,7 @@ Only `interested` and `question` make a Lead MQL (engaged replies). Opens and ot
 
 ## Language
 
-Pass `--reply-lang` with the language the person wrote in, using one of: `en-US`, `en-GB`, `fr`, `nl`, `nl-BE`, `de`, `da` (or `en`/`nl` if you can't tell the variant). Any other language: leave it out and the plan falls back to the language of their campaign email.
+Pass `--reply-lang` with the language the person wrote in, using one of: `en-US`, `en-GB`, `fr`, `nl`, `nl-BE`, `de`, `da`, `es`, `it` (or `en`/`nl` if you can't tell the variant). Any other language: leave it out and the plan falls back to the language of their campaign email.
 
 ## What the person gets back
 

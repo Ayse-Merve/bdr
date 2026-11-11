@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Assign Go Vocal persona keys to Salesforce Leads.
 
-A persona key tells Pardot Engagement Studio which of the 70 nurture emails a lead gets:
+A persona key tells Pardot Engagement Studio which of the 90 nurture emails a lead gets:
 <MARKET>-<PERSONA>-<SIZE> (e.g. NL-ENG-O), or <MARKET>-GEN for the General email.
 Every list and threshold is in config.json next to this file. Nothing here calls
 Salesforce: Claude runs the queries and the writes and hands this script the JSON.
 
   classify  leads JSON (+ opportunities, + review decisions) -> plan JSON
   record    plan + read-back JSON -> state/ write log, undo CSV, run file, run-log line
-  keys      the 70 valid keys, one per line (the Persona_Key__c picklist values)
+  keys      the 90 valid keys, one per line (the Persona_Key__c picklist values)
 
 Standard library only.
 """
@@ -22,10 +22,10 @@ import unicodedata
 from pathlib import Path
 
 CONFIG = Path(__file__).with_name("config.json")
-MARKETS = ["NAM", "UKI", "NL", "BE", "FR", "DACH", "NORDICS"]
+MARKETS = ["NAM", "UKI", "NL", "BE", "FR", "DACH", "NORDICS", "ES", "IT"]
 ROLE_PERSONAS = ["ENG", "DIR", "POL"]
 SIZES = ["S", "O", "W"]
-KEY_RE = re.compile(r"^(NAM|UKI|NL|BE|FR|DACH|NORDICS)-((ENG|DIR|POL)-(S|O|W)|GEN)$")
+KEY_RE = re.compile(r"^(NAM|UKI|NL|BE|FR|DACH|NORDICS|ES|IT)-((ENG|DIR|POL)-(S|O|W)|GEN)$")
 
 # Domain labels stripped from the right before taking the organisation part of a domain.
 SUFFIX_LABELS = set("""com org net edu gov mil int info biz eu co ac go gouv gv gob govt nhs
@@ -45,7 +45,7 @@ municipal commune ville de du des la le les stad stadt gemeinde kommune kommuneq
 metropolitan london lb royal and en und et administration communale government regional provincie
 province region mairie county cc dc bc mbc van der den het op aan upon on in im am an inc gov
 ayuntamiento municipalidad comune di del della city's township parish lokaal bestuur ocmw cpas""".split())
-LANGUAGE_MARKETS = {"dutch": {"NL", "BE"}, "french": {"FR"}, "german": {"DACH"}, "nordic": {"NORDICS"}}
+LANGUAGE_MARKETS = {"dutch": {"NL", "BE"}, "french": {"FR"}, "german": {"DACH"}, "nordic": {"NORDICS"}, "italian": {"IT"}}
 
 
 # ---------------------------------------------------------------- text helpers
@@ -215,7 +215,7 @@ def resolve_split(entry, ctx, cfg):
         if any(s in sp["french_states"] for s in states) or lang == "french":
             return sp["french"]["market"], sp["french"]["bands"], "French-speaking Switzerland"
         if any(s in sp["italian_states"] for s in states) or lang == "italian":
-            return sp["italian"]["market"], sp["italian"]["bands"], "Ticino (Italian-speaking): English email"
+            return sp["italian"]["market"], sp["italian"]["bands"], "Ticino (Italian-speaking): Italian email"
         return entry["market"], entry["bands"], "German-speaking Switzerland"
     # Belgium
     if any(s in sp["dutch_states"] for s in states):
@@ -531,7 +531,7 @@ def classify_lead(rec, opps_by_acct, decisions, cfg):
     key = f"{market}-GEN" if persona == "GEN" else f"{market}-{persona}-{size}"
     if not KEY_RE.match(key):
         row["status"] = "review"
-        row["review"].append({"on": "key", "question": f"Computed key '{key}' is not one of the 70. Check the inputs."})
+        row["review"].append({"on": "key", "question": f"Computed key '{key}' is not one of the 90. Check the inputs."})
         return row
     row["status"], row["key"] = "keyed", key
     return row

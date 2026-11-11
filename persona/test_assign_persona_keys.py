@@ -30,8 +30,8 @@ def persona(title, email="j.doe@gemeente-x.nl"):
 class Keys(unittest.TestCase):
     def test_seventy_keys(self):
         keys = list(apk.all_keys())
-        self.assertEqual(len(keys), 70)
-        self.assertEqual(len(set(keys)), 70)
+        self.assertEqual(len(keys), 90)
+        self.assertEqual(len(set(keys)), 90)
         self.assertTrue(all(apk.KEY_RE.match(k) for k in keys))
         self.assertIn("NL-GEN", keys)
         self.assertNotIn("NL-GEN-O", keys)
@@ -79,7 +79,10 @@ class Market(unittest.TestCase):
 
     def test_country_map(self):
         self.assertEqual(self.gov(CountryCode="SE", Company="Malmö stad")["market"], "NORDICS")
-        self.assertEqual(self.gov(CountryCode="IT", Company="Comune di Bergamo")["market"], "NAM")
+        self.assertEqual(self.gov(CountryCode="IT", Company="Comune di Bergamo")["market"], "IT")
+        self.assertEqual(self.gov(CountryCode="MX", Company="Municipio de Querétaro")["market"], "ES")
+        self.assertEqual(self.gov(CountryCode="CL", Company="Municipalidad de Providencia")["market"], "ES")
+        self.assertEqual(self.gov(CountryCode="AU", Company="City of Sydney")["market"], "NAM")
         self.assertEqual(self.gov(CountryCode="UK", Company="Anytown Council")["market"], "UKI")
         self.assertEqual(self.gov(CountryCode="LU", Company="Ville de Luxembourg")["market"], "FR")
 

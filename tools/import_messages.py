@@ -2,8 +2,8 @@
 
   python3 tools/import_messages.py [messages/source/persona-key-messages.xlsx]
 
-Reads the 'Messages' tab (one row per persona key: Subject, Email body) and adds the
-Danish variants from messages/danish.json. Run it whenever the sheet changes, then commit.
+Reads the 'Messages' tab (70 keys: Subject, Email body), adds the Danish variants from
+messages/danish.json and the ES/IT emails (translations of NAM) from messages/extra_markets.json. Run it whenever the sheet changes, then commit.
 """
 import json
 import sys
@@ -25,7 +25,9 @@ for _, r in df.iterrows():
                "status": r.get("Status")}
     if k in danish:
         msgs[k]["variants"] = {"da": {"language": "Danish", **danish[k]}}
-assert len(msgs) == 70, f"expected 70 persona keys, found {len(msgs)}"
+extra = json.loads((ROOT / "messages/extra_markets.json").read_text(encoding="utf-8"))["messages"]
+msgs.update(extra)
+assert len(msgs) == 90, f"expected 90 persona keys, found {len(msgs)}"
 out = ROOT / "messages/messages.json"
 out.write_text(json.dumps({"_source": src.name, "messages": msgs}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 print(f"{len(msgs)} keys, {sum('variants' in m for m in msgs.values())} with a Danish variant -> {out.relative_to(ROOT)}")

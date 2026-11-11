@@ -58,7 +58,8 @@ def test_unsubscribe_opts_out():
 def test_language_without_persona_key_uses_country():
     assert core.language_for(None, "belgium") == "nl-BE"
     assert core.language_for("", "germany") == "de"
-    assert core.language_for(None, "chile") == "en-US"
+    assert core.language_for(None, "chile") == "es"
+    assert core.language_for(None, "kenya") == "en-US"
     assert core.language_for(None, "belgium", reply_lang="fr") == "fr"
 
 
@@ -78,3 +79,12 @@ def test_referral_is_forward_only():
     assert p["salesforce"] == {}
     assert "reply" not in p["gmail"]
     assert "An Peeters" in p["gmail"]["forward"]["body"]
+
+
+def test_es_it_markets():
+    p = core.plan(category="interested", email="a@muni.cl", persona_key="ES-DIR-O", country="Chile",
+                  first_name="Ana", member_status="Sent", lead_status="Information Qualified (IQL)")
+    assert p["language"] == "es" and p["gmail"]["reply"]["body"].startswith("Hola Ana,")
+    p = core.plan(category="question", email="m@comune.it", persona_key="IT-GEN", country="Italy",
+                  first_name="Marco", member_status="Sent", lead_status="Information Qualified (IQL)")
+    assert p["language"] == "it" and p["rep"]["key"] == "roger" and p["gmail"]["reply"]["body"].startswith("Buongiorno Marco,")
